@@ -4,211 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultima Collectors Guide - Revitalized</title>
-    <link rel="stylesheet" href="pages/assets/css/styles.css">
-    <style>
-        a {
-          color: #8b4513;
-        }
-
-        a:hover {
-          color: #654321;
-        }
-
-        .navigation {
-            padding: 30px;
-        }
-        
-        .navigation ul {
-            list-style: none;
-            margin: 0;
-            padding-left: 20px;
-        }
-        
-        .navigation > ul {
-            padding-left: 0;
-        }
-        
-        .navigation li {
-            margin: 8px 0;
-        }
-        
-        .category-toggle {
-            cursor: pointer;
-            user-select: none;
-            display: block;
-            padding: 8px 0;
-            transition: color 0.2s;
-        }
-        
-        .category-toggle:hover {
-            color: #3498db;
-        }
-        
-        .category-toggle.level-0 {
-            color: #2c3e50;
-            font-size: 1.3em;
-            font-weight: bold;
-            margin-bottom: 10px;
-            border-bottom: 2px solid #e9ecef;
-            padding-bottom: 10px;
-        }
-        
-        .category-toggle.level-1 {
-            color: #34495e;
-            font-size: 1.1em;
-            font-weight: 600;
-            margin: 5px 0;
-        }
-        
-        .toggle-icon {
-            display: inline-block;
-            transition: transform 0.2s;
-            margin-right: 8px;
-            font-size: 0.8em;
-        }
-        
-        .toggle-icon.expanded {
-            transform: rotate(90deg);
-        }
-        
-        .category-content {
-            margin-left: 15px;
-            margin-top: 10px;
-        }
-        
-        .navigation strong {
-            color: #2c3e50;
-            font-size: 1.0em;
-            display: block;
-            margin-bottom: 8px;
-        }
-        
-        .navigation strong.level-2 {
-            font-size: 1.0em;
-            color: #34495e;
-        }
-        
-        .navigation a {
-            color: #8b4513;
-            text-decoration: none;
-            padding: 4px 8px;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-            display: inline-block;
-        }
-        
-        .navigation a:hover {
-            background-color: #f8f9fa;
-            text-decoration: underline;
-        }
-        
-        .description-section {
-            padding: 20px 30px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #e9ecef;
-        }
-
-        .description-section p {
-            color: #666;
-            font-size: 1rem;
-            line-height: 1.6;
-            margin: 0;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .description-section p {
-            padding-bottom: 10px;
-        }
-        
-        .intro-image {
-            padding: 20px 30px;
-            text-align: center;
-            background: #ffffff;
-        }
-        
-        .intro-image img {
-            max-width: 100%;
-            height: auto;
-            border-radius: 8px;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        }
-        
-        .description-section p {
-            color: #666;
-            font-size: 1rem;
-            line-height: 1.6;
-            margin: 0;
-            text-align: center;
-            max-width: 800px;
-            margin: 0 auto;
-        }
-        
-        .footer {
-            padding: 20px 30px;
-            text-align: center;
-            border-top: 1px solid #e9ecef;
-            background: #f8f9fa;
-        }
-
-        .footer p {
-            font-size: 0.8rem;
-            padding-bottom: 10px;
-        }
-        
-        .github-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: #333;
-            text-decoration: none;
-            padding: 8px 16px;
-            border-radius: 6px;
-            border: 1px solid #d1d5da;
-            background: #fff;
-            transition: all 0.2s;
-            font-size: 0.9rem;
-        }
-        
-        .github-link:hover {
-            background: #f6f8fa;
-            border-color: #1f883d;
-            text-decoration: none;
-        }
-        
-        .github-link svg {
-            flex-shrink: 0;
-        }
-        
-        .nav-controls {
-            padding: 20px 30px;
-            background: #f8f9fa;
-            border-bottom: 1px solid #e9ecef;
-            text-align: center;
-        }
-        
-        .nav-controls button {
-            background: #8b4513;
-            color: white;
-            border: none;
-            padding: 8px 16px;
-            margin: 0 5px;
-            border-radius: 4px;
-            cursor: pointer;
-            font-size: 0.9rem;
-            transition: background-color 0.2s;
-        }
-        
-        .nav-controls button:hover {
-            background: #654321;
-        }
-        
-        .nav-controls button:disabled {
-            background: #95a5a6;
-            cursor: not-allowed;
-        }
-    </style>
+    <link rel="stylesheet" href="css/main.css">
     <script>
         const STORAGE_KEY = 'ultima_nav_toggle_states';
 
@@ -310,17 +106,67 @@
             }
         }
 
+        function loadPageInFrame(url) {
+            const frame = document.getElementById('content-frame');
+            if (frame) {
+                frame.classList.add('loading');
+                frame.src = url;
+                
+                frame.onload = function() {
+                    frame.classList.remove('loading');
+                };
+            }
+        }
+
+        function updateActiveLink(activeElement) {
+            // Remove active class from all links
+            document.querySelectorAll('.navigation a').forEach(link => {
+                link.classList.remove('active');
+            });
+            
+            // Add active class to clicked link
+            if (activeElement) {
+                activeElement.classList.add('active');
+            }
+        }
+
+        function isDesktop() {
+            return window.innerWidth >= 1024;
+        }
+
         window.addEventListener('load', function() {
             restoreToggleStates();
             restoreAnchorPosition();
             
             document.querySelectorAll('.navigation a[href^="pages/"]').forEach(link => {
-                link.addEventListener('click', function() {
+                link.addEventListener('click', function(e) {
                     const listItem = this.parentElement;
                     if (listItem && listItem.id) {
                         saveCurrentAnchor(listItem.id);
                     }
+                    
+                    // Handle desktop iframe navigation
+                    if (isDesktop()) {
+                        e.preventDefault();
+                        loadPageInFrame(this.href);
+                        updateActiveLink(this);
+                    }
+                    // On mobile, let the default behavior happen (navigate to page)
                 });
+            });
+            
+            // Handle window resize
+            window.addEventListener('resize', function() {
+                // If switching from mobile to desktop, load intro page
+                if (isDesktop()) {
+                    const activeLink = document.querySelector('.navigation a.active');
+                    if (activeLink) {
+                        loadPageInFrame(activeLink.href);
+                    } else {
+                        // Load intro page by default
+                        loadPageInFrame('intro.html');
+                    }
+                }
             });
         });
 
@@ -329,32 +175,41 @@
 </head>
 <body>
     <div class="container">
-        <div class="header">
-            <div class="header-images">
-                <img src="images/top_left.jpg" alt="Ultima Collectors Guide" />
-                <img src="images/top_right.jpg" alt="" />
+        <!-- Mobile Header -->
+        <div class="mobile-only">
+            <div class="header">
+                <div class="header-images">
+                    <img src="images/top_left.jpg" alt="Ultima Collectors Guide" />
+                    <img src="images/top_right.jpg" alt="" />
+                </div>
+            </div>
+            
+            <div class="title-section">
+                <h1>Ultima Collectors Guide</h1>
+            </div>
+            
+            <div class="intro-image">
+              <a href="http://www.ultimacollectors.info/" target="_blank"><img src="images/intro.jpg" alt="Ultima Collectors Guide" /></a>
+            </div>
+            
+            <div class="description-section">
+                <p>This resource is a revitalization of the classic <a href="http://www.ultimacollectors.info/" target="_blank">Ultima Collectors Guide</a> originally created by Holger Bachert, and last updated on December 3rd, 2011. Their comprehensive collection documented the rich history of the Ultima series of computer role-playing games across countless platforms and editions.</p>
+                <p>This modernized version presents the same information in a more accessible, mobile-friendly format with improved navigation and contemporary web standards. None of the content was altered in doing this, and the author has given permission to use the content here, but the original website is still the best source of information and may be updated in the future.</p>
             </div>
         </div>
-        
-        <div class="title-section">
-            <h1>Ultima Collectors Guide</h1>
-        </div>
-        
-        <div class="intro-image">
-          <a href="http://www.ultimacollectors.info/" target="_blank"><img src="images/intro.jpg" alt="Ultima Collectors Guide" /></a>
-        </div>
-        
-        <div class="description-section">
-            <p>This resource is a revitalization of the classic <a href="http://www.ultimacollectors.info/" target="_blank">Ultima Collectors Guide</a> originally created by Holger Bachert, and last updated on December 3rd, 2011. Their comprehensive collection documented the rich history of the Ultima series of computer role-playing games across countless platforms and editions.</p>
-            <p>This modernized version presents the same information in a more accessible, mobile-friendly format with improved navigation and contemporary web standards. None of the content was altered in doing this, and the author has given permission to use the content here, but the original website is still the best source of information and may be updated in the future.</p>
-        </div>
-        
-        <div class="nav-controls">
-            <button onclick="expandAll()">Expand All</button>
-            <button onclick="collapseAll()">Collapse All</button>
-        </div>
-        
-        <div class="navigation">
+
+        <!-- Sidebar Navigation -->
+        <div class="sidebar">
+            <div class="sidebar-header desktop-only">
+                <h2><a href="#" onclick="loadPageInFrame('intro.html'); updateActiveLink(null); return false;">Ultima Collectors Guide</a></h2>
+            </div>
+            
+            <div class="nav-controls">
+                <button onclick="expandAll()">Expand All</button>
+                <button onclick="collapseAll()">Collapse All</button>
+            </div>
+            
+            <div class="navigation">
 <ul>
   <!-- Ultima Main Series -->
   <li>
@@ -1671,20 +1526,26 @@
     </div>
   </li>
 </ul>
+            </div>
+            
+            <div class="footer">
+               <p><strong>Original copyright: </strong>Original Content © 2000-2011 Holger Bachert / Tel</p>
+                <p>
+                    <a href="https://github.com/rudokemper/ultima-collectors-revitalized" target="_blank" class="github-link">
+                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
+                        </svg>
+                        View on GitHub
+                    </a>
+                </p>
+            </div>
         </div>
-        
-        <div class="footer">
-           <p><strong>Original copyright: </strong>Original Content © 2000-2011 Holger Bachert / Tel</p>
-            <p>As noted on the original site: <em>Images available on this site are presented for historical research and educational purposes only and may not be used outside this context. All logos and other trademarks are the exclusive property of their respective holders.</em></p>
-            <p>This project received permission from the original content curator to use the content here. The original website is still the best source of information and may be updated in the future.</p>
-            <p>
-                <a href="https://github.com/rudokemper/ultima-collectors-revitalized" target="_blank" class="github-link">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                    </svg>
-                    View on GitHub
-                </a>
-            </p>
+
+        <!-- Main Content Area (Desktop) -->
+        <div class="main-content desktop-only">
+            <iframe id="content-frame" class="content-frame" src="intro.html" title="Introduction">
+                <div class="loading-spinner"></div>
+            </iframe>
         </div>
     </div>
 </body>
