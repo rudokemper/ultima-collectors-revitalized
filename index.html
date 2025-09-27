@@ -134,6 +134,19 @@
             return window.innerWidth >= 1024;
         }
 
+        function handleMapIndexClick(event) {
+            event.preventDefault();
+            
+            if (isDesktop()) {
+                // Load in iframe for desktop
+                loadPageInFrame('map-images/index.html');
+                updateActiveLink(null);
+            } else {
+                // Navigate directly for mobile
+                window.location.href = 'map-images/index.html';
+            }
+        }
+
         window.addEventListener('load', function() {
             restoreToggleStates();
             restoreAnchorPosition();
@@ -1524,6 +1537,12 @@
     </li>
   </ul>
     </div>
+  </li>
+  <!-- Map Index -->
+  <li>
+    <span class="category-toggle level-0" onclick="handleMapIndexClick(event)" style="cursor: pointer;">
+      <span class="toggle-icon" id="icon-map-index">🗺️</span> Map Index
+    </span>
   </li>
 </ul>
             </div>
