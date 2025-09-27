@@ -1,0 +1,161 @@
+.map-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 2rem 0;
+}
+
+.map-card {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+    background: #f9f9f9;
+}
+
+/* Responsive grid */
+@media (max-width: 1200px) {
+    .map-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.map-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: transform 0.2s;
+    margin-bottom: 1rem;
+}
+
+.map-image:hover {
+    transform: scale(1.02);
+}
+
+.map-info {
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.map-description {
+    margin: 0.5rem 0;
+    color: #666;
+    font-style: italic;
+}
+
+.releases-toggle {
+    background: #6B7280;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.8rem;
+    margin: 0.5rem 0;
+    width: 100%;
+    text-align: left;
+}
+
+.releases-toggle:hover {
+    background: #4B5563;
+}
+
+.releases-toggle::after {
+    content: " ▼";
+    float: right;
+}
+
+.releases-toggle.expanded::after {
+    content: " ▲";
+}
+
+.releases-list {
+    display: none;
+    margin: 0.5rem 0;
+    padding: 0.5rem;
+    background: #f0f0f0;
+    border-radius: 4px;
+    font-size: 0.8rem;
+}
+
+.releases-list ul {
+    margin: 0;
+    padding-left: 1.2rem;
+}
+
+.releases-list li {
+    margin: 0.3rem 0;
+}
+
+.releases-list a {
+    color: #8B4513;
+    text-decoration: none;
+}
+
+.releases-list a:hover {
+    text-decoration: underline;
+}
+
+.game-section {
+    margin: 3rem 0;
+}
+
+.game-section h3 {
+    color: #8B4513;
+    border-bottom: 3px solid #8B4513;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    font-size: 1.8rem;
+}
+
+/* Lightbox styles */
+.lightbox {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    cursor: pointer;
+}
+
+.lightbox-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow: auto;
+}
+
+.lightbox-image {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.lightbox-close:hover {
+    color: #ccc;
+}
+
+@media (max-width: 768px) {
+    .map-grid {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+}
