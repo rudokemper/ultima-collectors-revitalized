@@ -5,6 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ultima Collectors Guide - Revitalized</title>
     <link rel="stylesheet" href="css/main.css">
+    <style>
+        /* Map Index specific styling to match other category toggles */
+        .navigation a.category-toggle.level-0 {
+            color: #2c3e50 !important;
+            text-decoration: none !important;
+        }
+        
+        .navigation a.category-toggle.level-0:hover {
+            color: #3498db !important;
+        }
+        
+        /* Desktop-specific styling for Map Index */
+        @media (min-width: 1024px) {
+            .sidebar .navigation a.category-toggle.level-0 {
+                background: linear-gradient(90deg, #e9ecef 0%, #f8f9fa 100%) !important;
+                padding: 12px 15px !important;
+                margin: 8px -15px !important;
+                border-radius: 8px !important;
+                border-left: 4px solid #8b4513 !important;
+                transition: all 0.2s !important;
+            }
+            
+            .sidebar .navigation a.category-toggle.level-0:hover {
+                background: linear-gradient(90deg, #dae0e5 0%, #f0f1f2 100%) !important;
+            }
+        }
+    </style>
     <script>
         const STORAGE_KEY = 'ultima_nav_toggle_states';
 
@@ -135,16 +162,19 @@
         }
 
         function handleMapIndexClick(event) {
-            event.preventDefault();
+            // Allow right-click and middle-click to work normally (open in new tab)
+            if (event.button !== 0) {
+                return true;
+            }
             
+            // Only handle left-click
             if (isDesktop()) {
-                // Load in iframe for desktop
+                // Prevent default navigation and load in iframe for desktop
+                event.preventDefault();
                 loadPageInFrame('map-images/index.html');
                 updateActiveLink(null);
-            } else {
-                // Navigate directly for mobile
-                window.location.href = 'map-images/index.html';
             }
+            // On mobile, let the default behavior happen (navigate to page)
         }
 
         window.addEventListener('load', function() {
@@ -1540,9 +1570,9 @@
   </li>
   <!-- Map Index -->
   <li>
-    <span class="category-toggle level-0" onclick="handleMapIndexClick(event)" style="cursor: pointer;">
+    <a href="map-images/index.html" class="category-toggle level-0" onclick="handleMapIndexClick(event)" style="cursor: pointer; text-decoration: none; color: #2c3e50 !important; font-size: 1.3em; font-weight: bold; display: block; padding: 8px 0;">
       <span class="toggle-icon" id="icon-map-index">🗺️</span> Map Index
-    </span>
+    </a>
   </li>
 </ul>
             </div>
