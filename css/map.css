@@ -44,20 +44,22 @@
 }
 
 .releases-toggle {
-    background: #6B7280;
-    color: white;
-    border: none;
+    background: #E6F3FF; 
+    color: #4A5568; 
+    border: 1px solid #CBD5E0;
     padding: 0.5rem 1rem;
     border-radius: 4px;
     cursor: pointer;
     font-size: 0.8rem;
+    font-weight: 700;
     margin: 0.5rem 0;
     width: 100%;
     text-align: left;
 }
 
 .releases-toggle:hover {
-    background: #4B5563;
+    background: #D6EBFF;
+    border-color: #A0AEC0;
 }
 
 .releases-toggle::after {
