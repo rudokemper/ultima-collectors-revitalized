@@ -173,15 +173,20 @@
             
             // Handle window resize
             window.addEventListener('resize', function() {
-                // If switching from mobile to desktop, load intro page
+                // If switching from mobile to desktop, preserve current content
                 if (isDesktop()) {
+                    const frame = document.getElementById('content-frame');
                     const activeLink = document.querySelector('.navigation a.active');
-                    if (activeLink) {
-                        loadPageInFrame(activeLink.href);
-                    } else {
-                        // Load intro page by default
-                        loadPageInFrame('intro.html');
+                    
+                    // Only reload if no content is currently loaded or if we have an active link
+                    if (!frame.src || frame.src.includes('about:blank')) {
+                        if (activeLink) {
+                            loadPageInFrame(activeLink.href);
+                        } else {
+                            loadPageInFrame('intro.html');
+                        }
                     }
+                    // Otherwise, keep whatever is currently loaded (including map index)
                 }
             });
         });
