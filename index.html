@@ -1,1392 +1,1407 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ultima Collectors Guide - Revitalized</title>
-    <link rel="stylesheet" href="css/main.css">
-    <script src="js/main.js"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ultima Collectors Guide - Revitalized</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/main.js"></script>
 </head>
+
 <body>
-    <div class="container">
-        <!-- Mobile Header -->
-        <div class="mobile-only">
-            <div class="header">
-                <div class="header-images">
-                    <img src="images/top_left.jpg" alt="Ultima Collectors Guide" />
-                    <img src="images/top_right.jpg" alt="" />
-                </div>
-            </div>
-            
-            <div class="title-section">
-                <h1>Ultima Collectors Guide</h1>
-            </div>
-            
-            <div class="intro-image">
-              <a href="http://www.ultimacollectors.info/" target="_blank"><img src="images/intro.jpg" alt="Ultima Collectors Guide" /></a>
-            </div>
-            
-            <div class="description-section">
-                <p>This resource is a revitalization of the classic <a href="http://www.ultimacollectors.info/" target="_blank">Ultima Collectors Guide</a> originally created by Holger Bachert, and last updated on December 3rd, 2011. Their comprehensive collection documented the rich history of the Ultima series of computer role-playing games across countless platforms and editions.</p>
-                <p>This modernized version presents the same information in a more accessible, mobile-friendly format with improved navigation and contemporary web standards. It was done using Python and BeautifulSoup. None of the content was altered in doing this, and the author has given permission to use the content here, but the original website is still the best source of information and may be updated in the future.</p>
-            </div>
+  <div class="container">
+    <!-- Mobile Header -->
+    <div class="mobile-only">
+      <div class="header">
+        <div class="header-images">
+          <img src="images/top_left.jpg" alt="Ultima Collectors Guide" />
+          <img src="images/top_right.jpg" alt="" />
         </div>
+      </div>
 
-        <!-- Sidebar Navigation -->
-        <div class="sidebar">
-            <div class="sidebar-header desktop-only">
-                <h2><a href="#" onclick="loadPageInFrame('intro.html'); updateActiveLink(null); return false;">Ultima Collectors Guide</a></h2>
-            </div>
-            
-            <div class="nav-controls">
-                <button onclick="expandAll()">Expand All</button>
-                <button onclick="collapseAll()">Collapse All</button>
-            </div>
-            
-            <div class="navigation">
-<ul>
-  <!-- Ultima Main Series -->
-  <li>
-    <span class="category-toggle level-0" onclick="toggleCategory('cat-ultima-main-series-0')">
-      <span class="toggle-icon" id="icon-cat-ultima-main-series-0">▶</span> Ultima Main Series
-    </span>
-    <div class="category-content" id="cat-ultima-main-series-0" style="display: none;">
-  <ul>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-i-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-i-1">▶</span> Ultima I
-      </span>
-      <div class="category-content" id="cat-ultima-i-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">Apple II</strong>
-      <ul>
-        <li id="u1-apple-1"><a href="pages/u1_apple_1.html">1st Edition</a></li>
-        <li id="u1-apple-2"><a href="pages/u1_apple_2.html">2nd Edition (Progame)</a></li>
-        <li id="u1-apple-3"><a href="pages/u1_apple_3.html">Origin Remake</a></li>
-        <li id="u1-apple-4"><a href="pages/u1_apple_4.html">Jing Hsun Edition (TW)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Apple IIGS</strong>
-      <ul>
-        <li id="u1-2gs-1"><a href="pages/u1_2gs_1.html">Vitesse Edition</a></li>
-        <li id="u1-2gs-2"><a href="pages/u1_2gs_2.html">Shareware Solutions Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari 800</strong>
-      <ul>
-        <li id="u1-atari-1"><a href="pages/u1_atari_1.html">The Original (Sierra)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">C64</strong>
-      <ul>
-        <li id="u1-c64-1"><a href="pages/u1_c64_1.html">Origin Remake</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u1-pc-1"><a href="pages/u1_pc_1.html">Origin Remake</a></li>
-        <li id="u1-pc-2"><a href="pages/u1_pc_2.html">Jing Hsun Edition (TW)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">MSX 2</strong>
-      <ul>
-        <li id="u1-msx-1"><a href="pages/u1_msx_1.html">Japanese Remake</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-8801</strong>
-      <ul>
-        <li id="u1-pc88-1"><a href="pages/u1_pc88_1.html">Japanese Remake</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-88VA</strong>
-      <ul>
-        <li id="u1-pc88va-1"><a href="pages/u1_pc88va_1.html">Japanese Remake</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9801</strong>
-      <ul>
-        <li id="u1-pc98-1"><a href="pages/u1_pc98_1.html">Japanese Remake 5.25LD</a></li>
-        <li id="u1-pc98-2"><a href="pages/u1_pc98_2.html">Japanese Remake 3.5HD</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">X1</strong>
-      <ul>
-        <li id="u1-x1-1"><a href="pages/u1_x1_1.html">Japanese Remake</a></li>
-      </ul>
-      </li>
-    </ul>
+      <div class="title-section">
+        <h1>Ultima Collectors Guide</h1>
       </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-ii-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-ii-1">▶</span> Ultima II
-      </span>
-      <div class="category-content" id="cat-ultima-ii-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">Apple II</strong>
-      <ul>
-        <li id="u2-apple-1"><a href="pages/u2_apple_1.html">1st Big Box Edition</a></li>
-        <li id="u2-apple-2"><a href="pages/u2_apple_2.html">2nd Big Box Edition</a></li>
-        <li id="u2-apple-3"><a href="pages/u2_apple_3.html">3rd Big Box Edition</a></li>
-        <li id="u2-apple-6"><a href="pages/u2_apple_6.html">Black Box Edition</a></li>
-        <li id="u2-apple-4"><a href="pages/u2_apple_4.html">1st Grey Box Edition</a></li>
-        <li id="u2-apple-5"><a href="pages/u2_apple_5.html">2nd Grey Box Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Apple Macintosh</strong>
-      <ul>
-        <li id="u2-mac-1"><a href="pages/u2_mac_1.html">Grey Box Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari 800</strong>
-      <ul>
-        <li id="u2-atari-1"><a href="pages/u2_atari_1.html">1st Big Box Edition</a></li>
-        <li id="u2-atari-2"><a href="pages/u2_atari_2.html">2nd Big Box Edition</a></li>
-        <li id="u2-atari-3"><a href="pages/u2_atari_3.html">Black Box Edition</a></li>
-        <li id="u2-atari-4"><a href="pages/u2_atari_4.html">Grey Box Edition</a></li>
-        <li id="u2-c64atari-1"><a href="pages/u2_c64atari_1.html">C64/Atari Combo Edition</a></li>
-        <li id="u2-c64atari-2"><a href="pages/u2_c64atari_2.html">C64/Atari Combo MCC</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari ST</strong>
-      <ul>
-        <li id="u2-st-1"><a href="pages/u2_st_1.html">Grey Box Edition</a></li>
-        <li id="u2-st-2"><a href="pages/u2_st_2.html">MCC Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">C64</strong>
-      <ul>
-        <li id="u2-c64-1"><a href="pages/u2_c64_1.html">Black Box Edition</a></li>
-        <li id="u2-c64-2"><a href="pages/u2_c64_2.html">Grey Box Edition</a></li>
-        <li id="u2-c64atari-1"><a href="pages/u2_c64atari_1.html">C64/Atari Combo Edition</a></li>
-        <li id="u2-c64atari-2"><a href="pages/u2_c64atari_2.html">C64/Atari Combo MCC</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">FM-7/77</strong>
-      <ul>
-        <li id="u2-fm7-1"><a href="pages/u2_fm7_1.html">Starcraft Edition 5.25in (JP)</a></li>
-        <li id="u2-fm77-1"><a href="pages/u2_fm77_1.html">Starcraft Edition 3.5in (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u2-pc-1"><a href="pages/u2_pc_1.html">Big Box Edition</a></li>
-        <li id="u2-pc-2"><a href="pages/u2_pc_2.html">Black Box Edition</a></li>
-        <li id="u2-pc-3"><a href="pages/u2_pc_3.html">1st Grey Box Edition</a></li>
-        <li id="u2-pc-4"><a href="pages/u2_pc_4.html">2nd Grey Box Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">MSX 2</strong>
-      <ul>
-        <li id="u2-msx-1"><a href="pages/u2_msx_1.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-8801</strong>
-      <ul>
-        <li id="u2-pc88-1"><a href="pages/u2_pc88_1.html">Starcraft Edition (JP)</a></li>
-        <li id="u2-pc88-2"><a href="pages/u2_pc88_2.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-88VA</strong>
-      <ul>
-        <li id="u2-pc88va-1"><a href="pages/u2_pc88va_1.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9801</strong>
-      <ul>
-        <li id="u2-pc98-5"><a href="pages/u2_pc98_5.html">Starcraft Edition 5.25LD (JP)</a></li>
-        <li id="u2-pc98-4"><a href="pages/u2_pc98_4.html">Starcraft Edition 3.5LD (JP)</a></li>
-        <li id="u2-pc98-1"><a href="pages/u2_pc98_1.html">Ponycanyon Remake 5.25HD (JP)</a></li>
-        <li id="u2-pc98-2"><a href="pages/u2_pc98_2.html">Ponycanyon Remake 5.25LD (JP)</a></li>
-        <li id="u2-pc98-3"><a href="pages/u2_pc98_3.html">Ponycanyon Remake 3.5HD (JP)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-iii-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-iii-1">▶</span> Ultima III
-      </span>
-      <div class="category-content" id="cat-ultima-iii-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">Amiga</strong>
-      <ul>
-        <li id="u3-amiga-1"><a href="pages/u3_amiga_1.html">Standard Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Apple II</strong>
-      <ul>
-        <li id="u3-apple-1"><a href="pages/u3_apple_1.html">1st Edition</a></li>
-        <li id="u3-apple-2"><a href="pages/u3_apple_2.html">2nd Edition</a></li>
-        <li id="u3-apple-3"><a href="pages/u3_apple_3.html">3rd Edition</a></li>
-        <li id="u3-apple-4"><a href="pages/u3_apple_4.html">Ediciel French Edition</a></li>
-        <li id="u3-apple-5"><a href="pages/u3_apple_5.html">Jing Hsun Edition (TW)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Apple Macintosh</strong>
-      <ul>
-        <li id="u3-mac-1"><a href="pages/u3_mac_1.html">Standard Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari 800</strong>
-      <ul>
-        <li id="u3-atari-1"><a href="pages/u3_atari_1.html">1st Edition</a></li>
-        <li id="u3-atari-2"><a href="pages/u3_atari_2.html">2nd Edition</a></li>
-        <li id="u3-ataric64-1"><a href="pages/u3_ataric64_1.html">C64/Atari Combo Edition</a></li>
-        <li id="u3-atari-3"><a href="pages/u3_atari_3.html">All American Adventures Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari ST</strong>
-      <ul>
-        <li id="u3-st-1"><a href="pages/u3_st_1.html">Standard Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">C64</strong>
-      <ul>
-        <li id="u3-c64-1"><a href="pages/u3_c64_1.html">1st Edition</a></li>
-        <li id="u3-c64-2"><a href="pages/u3_c64_2.html">2nd Edition</a></li>
-        <li id="u3-c64-3"><a href="pages/u3_c64_3.html">3rd Edition</a></li>
-        <li id="u3-c64atari-1"><a href="pages/u3_c64atari_1.html">C64/Atari Combo Edition</a></li>
-        <li id="u3-c64-4"><a href="pages/u3_c64_4.html">All American Adventures Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">FM-7/77</strong>
-      <ul>
-        <li id="u3-fm7-1"><a href="pages/u3_fm7_1.html">Starcraft Edition 5.25in (JP)</a></li>
-        <li id="u3-fm77-1"><a href="pages/u3_fm77_1.html">Starcraft Edition 3.5in (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u3-pc-1"><a href="pages/u3_pc_1.html">1st Edition</a></li>
-        <li id="u3-pc-2"><a href="pages/u3_pc_2.html">2nd Edition</a></li>
-        <li id="u3-pc-3"><a href="pages/u3_pc_3.html">3rd Edition</a></li>
-        <li id="u3-pc-4"><a href="pages/u3_pc_4.html">Jing Hsun Edition (TW)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">MSX</strong>
-      <ul>
-        <li id="u3-msx-1"><a href="pages/u3_msx_1.html">Ponycanyon Remake (JP)</a></li>
-        <li id="u3-msx-2"><a href="pages/u3_msx_2.html">Ponycanyon Cartridge Edition (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">NES</strong>
-      <ul>
-        <li id="u3-nes-1"><a href="pages/u3_nes_1.html">Standard NES Version</a></li>
-        <li id="u3-fc-1"><a href="pages/u3_fc_1.html">Famicom version (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-8801</strong>
-      <ul>
-        <li id="u3-pc88-1"><a href="pages/u3_pc88_1.html">Starcraft Edition (JP)</a></li>
-        <li id="u3-pc88-2"><a href="pages/u3_pc88_2.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9801</strong>
-      <ul>
-        <li id="u3-pc98-2"><a href="pages/u3_pc98_2.html">Starcraft Edition (JP) 5.25LD</a></li>
-        <li id="u3-pc98-4"><a href="pages/u3_pc98_4.html">Starcraft Edition (JP) 5.25HD</a></li>
-        <li id="u3-pc98-1"><a href="pages/u3_pc98_1.html">Ponycanyon Remake 5.25in (JP)</a></li>
-        <li id="u3-pc98-3"><a href="pages/u3_pc98_3.html">Ponycanyon Remake 3.5in (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">X1</strong>
-      <ul>
-        <li id="u3-x1-1"><a href="pages/u3_x1_1.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-iv-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-iv-1">▶</span> Ultima IV
-      </span>
-      <div class="category-content" id="cat-ultima-iv-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">Amiga</strong>
-      <ul>
-        <li id="u4-amiga-1"><a href="pages/u4_amiga_1.html">Standard Edition</a></li>
-        <li id="u4-amiga-2"><a href="pages/u4_amiga_2.html">Microprose Edition (EU)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Apple II</strong>
-      <ul>
-        <li id="u4-apple-1"><a href="pages/u4_apple_1.html">1st Edition</a></li>
-        <li id="u4-apple-2"><a href="pages/u4_apple_2.html">2nd Edition</a></li>
-        <li id="u4-apple-3"><a href="pages/u4_apple_3.html">Korean Edition (Softdisk)</a></li>
-        <li id="u4-apple-4"><a href="pages/u4_apple_4.html">Korean Edition (TOPIA)</a></li>
-        <li id="u4-apple-8"><a href="pages/u4_apple_5.html">Jing Hsun Edition (TW)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari 800</strong>
-      <ul>
-        <li id="u4-atari-1"><a href="pages/u4_atari_1.html">1st Edition</a></li>
-        <li id="u4-atari-2"><a href="pages/u4_atari_2.html">2nd Edition</a></li>
-        <li id="u4-atari-3"><a href="pages/u4_atari_3.html">US Gold Edition (UK)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari ST</strong>
-      <ul>
-        <li id="u4-st-1"><a href="pages/u4_st_1.html">Standard Edition</a></li>
-        <li id="u4-st-2"><a href="pages/u4_st_2.html">Microprose Edition (EU)</a></li>
-        <li id="u4-st-3"><a href="pages/u4_st_3.html">Microprose Edition (FR)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">C64</strong>
-      <ul>
-        <li id="u4-c64-1"><a href="pages/u4_c64_1.html">1st Edition</a></li>
-        <li id="u4-c64-2"><a href="pages/u4_c64_2.html">2nd Edition</a></li>
-        <li id="u4-c64-3"><a href="pages/u4_c64_3.html">Microprose Edition (EU)</a></li>
-        <li id="u4-c64-4"><a href="pages/u4_c64_4.html">US Gold Edition (UK)</a></li>
-        <li id="u4-c64-5"><a href="pages/u4_c64_5.html">US Gold Edition (DE)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">FM-7/77</strong>
-      <ul>
-        <li id="u4-fm7-1"><a href="pages/u4_fm7_1.html">Ponycanyon Remake (JP) 5.25LD</a></li>
-        <li id="u4-fm7-2"><a href="pages/u4_fm7_2.html">Ponycanyon Remake (JP) 3.5LD</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">FM Towns</strong>
-      <ul>
-        <li id="u4-fmtowns-1"><a href="pages/u4_fmtowns_1.html">Fujitsu Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u4-pc-1"><a href="pages/u4_pc_1.html">1st Edition</a></li>
-        <li id="u4-pc-2"><a href="pages/u4_pc_2.html">1st Edition 3.5in</a></li>
-        <li id="u4-pc-3"><a href="pages/u4_pc_3.html">2nd Edition</a></li>
-        <li id="u4-pc-4"><a href="pages/u4_pc_4.html">2nd Edition 3.5in</a></li>
-        <li id="u4-pc-5"><a href="pages/u4_pc_5.html">Microprose Edition (EU)</a></li>
-        <li id="u4-pc-6"><a href="pages/u4_pc_6.html">Chinese Edition (TW)</a></li>
-        <li id="u4-pc-8"><a href="pages/u4_pc_8.html">Jing Hsun Edition (TW)</a></li>
-        <li id="u4-pc-7"><a href="pages/u4_pc_7.html">Korean Edition (KR)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">MSX</strong>
-      <ul>
-        <li id="u4-msx-1"><a href="pages/u4_msx_1.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">NES</strong>
-      <ul>
-        <li id="u4-nes-1"><a href="pages/u4_nes_1.html">Standard NES Version</a></li>
-        <li id="u4-fc-1"><a href="pages/u4_fc_1.html">Famicom Version (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-8801</strong>
-      <ul>
-        <li id="u4-pc88-1"><a href="pages/u4_pc88_1.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC9801</strong>
-      <ul>
-        <li id="u4-pc98-1"><a href="pages/u4_pc98_1.html">Ponycanyon Remake 5.25HD (JP)</a></li>
-        <li id="u4-pc98-2"><a href="pages/u4_pc98_2.html">Ponycanyon Remake 3.5HD (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">SMS</strong>
-      <ul>
-        <li id="u4-sms-uk"><a href="pages/u4_sms_uk.html">English Edition</a></li>
-        <li id="u4-sms-de"><a href="pages/u4_sms_de.html">German Edition</a></li>
-        <li id="u4-sms-fr"><a href="pages/u4_sms_fr.html">French Edition</a></li>
-        <li id="u4-sms-ca"><a href="pages/u4_sms_ca.html">Canadian Edition</a></li>
-        <li id="u4-sms-br"><a href="pages/u4_sms_br.html">Brazilian Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">X1</strong>
-      <ul>
-        <li id="u4-x1-1"><a href="pages/u4_x1_1.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">X68000</strong>
-      <ul>
-        <li id="u4-x68000-1"><a href="pages/u4_x68000_1.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-v-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-v-1">▶</span> Ultima V
-      </span>
-      <div class="category-content" id="cat-ultima-v-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">Amiga</strong>
-      <ul>
-        <li id="u5-amiga-1"><a href="pages/u5_amiga_1.html">Standard Edition 'C'</a></li>
-        <li id="u5-amiga-2"><a href="pages/u5_amiga_2.html">Standard Edition 'C' (EU)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Apple II</strong>
-      <ul>
-        <li id="u5-apple-1"><a href="pages/u5_apple_1.html">Standard Edition 'A'</a></li>
-        <li id="u5-apple-2"><a href="pages/u5_apple_2.html">Standard Edition 'B'</a></li>
-        <li id="u5-apple-3"><a href="pages/u5_apple_3.html">Standard Edition 'C'</a></li>
-        <li id="u5-apple-4"><a href="pages/u5_apple_4.html">Microprose Edition (EU)</a></li>
-        <li id="u5-apple-5b"><a href="pages/u5_apple_5a.html">Chinese Edition Pt.1 (TW)</a></li>
-        <li id="u5-apple-5c"><a href="pages/u5_apple_5b.html">Chinese Edition Pt.2 (TW)</a></li>
-        <li id="u5-apple-6"><a href="pages/u5_apple_6.html">Jing Hsun Edition (TW)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari ST</strong>
-      <ul>
-        <li id="u5-st-1"><a href="pages/u5_st_1.html">Standard Edition 'C'</a></li>
-        <li id="u5-st-2"><a href="pages/u5_st_2.html">2nd Standard Edition 'C'</a></li>
-        <li id="u5-st-3"><a href="pages/u5_st_3.html">French Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">C64</strong>
-      <ul>
-        <li id="u5-c64-1"><a href="pages/u5_c64_1.html">Standard Edition 'B'</a></li>
-        <li id="u5-c64-2"><a href="pages/u5_c64_2.html">Standard Edition 'C'</a></li>
-        <li id="u5-c64-3"><a href="pages/u5_c64_3.html">Standard Edition 'C' (EU)</a></li>
-        <li id="u5-c64-4"><a href="pages/u5_c64_4.html">Microprose Edition (EU)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">FM Towns</strong>
-      <ul>
-        <li id="u5-fmtowns-1"><a href="pages/u5_fmtowns_1.html">Fujitsu Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u5-pc-1"><a href="pages/u5_pc_1.html">Standard Edition 'B' 5.25LD</a></li>
-        <li id="u5-pc-8"><a href="pages/u5_pc_8.html">Standard Edition 'B' 3.5LD</a></li>
-        <li id="u5-pc-5"><a href="pages/u5_pc_5.html">Combo Edition 'B' 3.5/5.25LD</a></li>
-        <li id="u5-pc-2"><a href="pages/u5_pc_2.html">Standard Edition 'C' 5.25LD</a></li>
-        <li id="u5-pc-6"><a href="pages/u5_pc_6.html">Standard Edition 'C' 3.5LD</a></li>
-        <li id="u5-pc-3"><a href="pages/u5_pc_3.html">Standard Edition 'C' (EU)</a></li>
-        <li id="u5-pc-4"><a href="pages/u5_pc_4.html">Microprose Edition 5.25LD (EU)</a></li>
-        <li id="u5-pc-7"><a href="pages/u5_pc_7.html">Microprose Edition 3.5LD (EU)</a></li>
-        <li id="u5-pc-9b"><a href="pages/u5_pc_9a.html">Chinese Edition Pt.1 (TW)</a></li>
-        <li id="u5-pc-9c"><a href="pages/u5_pc_9b.html">Chinese Edition Pt.2 (TW)</a></li>
-        <li id="u5-pc-10"><a href="pages/u5_pc_10.html">Korean Edition (KR)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">NES</strong>
-      <ul>
-        <li id="u5-nes-1"><a href="pages/u5_nes_1.html">Standard NES Version</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9801</strong>
-      <ul>
-        <li id="u5-pc98-1"><a href="pages/u5_pc98_1.html">Ponycanyon Remake 5HD (JP)</a></li>
-        <li id="u5-pc98-2"><a href="pages/u5_pc98_2.html">Ponycanyon Remake 3.5HD (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">X68000</strong>
-      <ul>
-        <li id="u5-x68000-1"><a href="pages/u5_x68000_1.html">Ponycanyon Remake (JP)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-vi-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-vi-1">▶</span> Ultima VI
-      </span>
-      <div class="category-content" id="cat-ultima-vi-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">Amiga</strong>
-      <ul>
-        <li id="u6-amiga-1"><a href="pages/u6_amiga_1.html">Standard Edition (US)</a></li>
-        <li id="u6-amiga-2"><a href="pages/u6_amiga_2.html">Standard Edition (EU)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Atari ST</strong>
-      <ul>
-        <li id="u6-st-1"><a href="pages/u6_st_1.html">Standard Edition (EU)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">C64</strong>
-      <ul>
-        <li id="u6-c64-1"><a href="pages/u6_c64_1.html">Standard Edition (US)</a></li>
-        <li id="u6-c64-2"><a href="pages/u6_c64_2.html">Standard Edition (EU)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">FM Towns</strong>
-      <ul>
-        <li id="u6-fmtowns-1"><a href="pages/u6_fmtowns_1.html">Fujitsu Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u6-pc-1"><a href="pages/u6_pc_1.html">Standard Edition 5.25LD(US)</a></li>
-        <li id="u6-pc-8"><a href="pages/u6_pc_8.html">Standard Edition 3.5LD(US)</a></li>
-        <li id="u6-pc-2"><a href="pages/u6_pc_2.html">Special Edition (US)</a></li>
-        <li id="u6-pc-15"><a href="pages/u6_pc_15.html">Standard Edition 5.25LD(EU)</a></li>
-        <li id="u6-pc-3"><a href="pages/u6_pc_3.html">Standard Edition 3.5LD(EU)</a></li>
-        <li id="u6-pc-13"><a href="pages/u6_pc_13.html">Standard Ed. Dual Media (EU)</a></li>
-        <li id="u6-pc-4"><a href="pages/u6_pc_4.html">Special Promotional 5.25HD(US)</a></li>
-        <li id="u6-pc-9"><a href="pages/u6_pc_9.html">Special Promotional 3.5HD(US)</a></li>
-        <li id="u6-pc-5"><a href="pages/u6_pc_5.html">Original Uncut 3.5HD(EU)</a></li>
-        <li id="u6-pc-12"><a href="pages/u6_pc_12.html">Original Uncut 5.25HD(EU)</a></li>
-        <li id="u6-pc-6"><a href="pages/u6_pc_6.html">Hitsquad Budget Edition (UK)</a></li>
-        <li id="u6-pc-10"><a href="pages/u6_pc_10.html">Hitsquad Budget Edition (IT)</a></li>
-        <li id="u6-pc-7"><a href="pages/u6_pc_7.html">GT Interactive Edition</a></li>
-        <li id="u6-pc-11"><a href="pages/u6_pc_11.html">Chinese Edition (TW)</a></li>
-        <li id="u6-pc-14"><a href="pages/u6_pc_14.html">Korean Edition (KR)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9801</strong>
-      <ul>
-        <li id="u6-pc98-1"><a href="pages/u6_pc98_1.html">Ponycanyon Edition 5HD(JP)</a></li>
-        <li id="u6-pc98-2"><a href="pages/u6_pc98_2.html">Ponycanyon Edition 3.5HD(JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">SNES</strong>
-      <ul>
-        <li id="u6-snes-1"><a href="pages/u6_snes_1.html">Standard SNES Version</a></li>
-        <li id="u6-sfc-1"><a href="pages/u6_sfc_1.html">SFC Version (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">X68000</strong>
-      <ul>
-        <li id="u6-x68000-1"><a href="pages/u6_x68000_1.html">Ponycanyon Edition (JP)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-vii-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-vii-1">▶</span> Ultima VII
-      </span>
-      <div class="category-content" id="cat-ultima-vii-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u7-pc-1"><a href="pages/u7_pc_1.html">Standard Ed. 5.25HD (US)</a></li>
-        <li id="u7-pc-7"><a href="pages/u7_pc_7.html">Standard Ed. 3.5HD (US)</a></li>
-        <li id="u7-pc-13"><a href="pages/u7_pc_13.html">PC Games Ed. 3.5HD (US)</a></li>
-        <li id="u7-pc-8"><a href="pages/u7_pc_8.html">Standard Ed. 5.25HD (UK)</a></li>
-        <li id="u7-pc-2"><a href="pages/u7_pc_2.html">Standard Ed. 3.5HD (UK)</a></li>
-        <li id="u7-pc-11"><a href="pages/u7_pc_11.html">EA Edition 3.5HD (UK)</a></li>
-        <li id="u7-pc-5"><a href="pages/u7_pc_5.html">Hitsquad Edition (UK)</a></li>
-        <li id="u7-pc-10"><a href="pages/u7_pc_10.html">German Ed. 5.25HD (DE)</a></li>
-        <li id="u7-pc-3"><a href="pages/u7_pc_3.html">German Ed. 3.5HD (DE)</a></li>
-        <li id="u7-pc-12"><a href="pages/u7_pc_12.html">EA Edition 3.5HD (DE)</a></li>
-        <li id="u7-pc-6"><a href="pages/u7_pc_6.html">Softprice Edition (DE)</a></li>
-        <li id="u7-pc-4"><a href="pages/u7_pc_4.html">French Edition 3.5HD (FR)</a></li>
-        <li id="u7-pc-15"><a href="pages/u7_pc_15.html">Polish Edition 5.25HD (PL)</a></li>
-        <li id="u7-pc-17"><a href="pages/u7_pc_17.html">Spanish Edition 3.5HD (ES)</a></li>
-        <li id="u7-pc-9"><a href="pages/u7_pc_9.html">Chinese Edition (TW)</a></li>
-        <li id="u7-pc-16"><a href="pages/u7_pc_16.html">Korean Edition (KR)</a></li>
-        <li id="u7-pc-14"><a href="pages/u7_pc_14.html">Spanish CD-ROM Classics (ES)</a></li>
-        <li id="u7-fov-1"><a href="pages/u7_fov_1.html">Forge of Virtue 3.5HD (US)</a></li>
-        <li id="u7-fov-2"><a href="pages/u7_fov_2.html">Forge of Virtue 5.25HD (US)</a></li>
-        <li id="u7-fov-3"><a href="pages/u7_fov_3.html">Forge of Virtue 3.5HD (EU)</a></li>
-        <li id="u7-fov-4"><a href="pages/u7_fov_4.html">Forge of Virtue 5.25HD (EU)</a></li>
-        <li id="u7-fov-5"><a href="pages/u7_fov_5.html">Forge of Virtue EA - 3.5HD (EU)</a></li>
-        <li id="u7-fov-6"><a href="pages/u7_fov_6.html">Forge of Virtue Chinese (TW)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">SNES</strong>
-      <ul>
-        <li id="u7-snes-1"><a href="pages/u7_snes_1.html">Standard SNES Version</a></li>
-        <li id="u7-sfc-1"><a href="pages/u7_sfc_1.html">SFC Version (JP)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-vii-part-2-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-vii-part-2-1">▶</span> Ultima VII Part 2
-      </span>
-      <div class="category-content" id="cat-ultima-vii-part-2-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u72-us-1"><a href="pages/u72_us_1.html">Standard Edition (US)</a></li>
-        <li id="u72-uk-1"><a href="pages/u72_uk_1.html">EU Standard Edition (UK)</a></li>
-        <li id="u72-de-1"><a href="pages/u72_de_1.html">EU Standard Edition (DE)</a></li>
-        <li id="u72-es-1"><a href="pages/u72_es_1.html">Spanish Edition (ES)</a></li>
-        <li id="u72-cn-1"><a href="pages/u72_cn_1.html">Chinese Edition (TW)</a></li>
-        <li id="u72-kr-1"><a href="pages/u72_kr_1.html">Korean Edition (KR)</a></li>
-        <li id="u72-kr-2"><a href="pages/u72_kr_2.html">Korean CD-ROM Edition (KR)</a></li>
-        <li id="u72-es-2"><a href="pages/u72_es_2.html">Spanish CD-ROM Classics (ES)</a></li>
-        <li id="u72-ss-1"><a href="pages/u72_ss_1.html">Silver Seed Add-On (US)</a></li>
-        <li id="u72-ss-2"><a href="pages/u72_ss_2.html">Silver Seed Add-On (EU)</a></li>
-        <li id="u72-ss-3"><a href="pages/u72_ss_3.html">Silver Seed Add-On (TW)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-viii-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-viii-1">▶</span> Ultima VIII
-      </span>
-      <div class="category-content" id="cat-ultima-viii-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u8-us-1"><a href="pages/u8_us_1.html">Disk Edition (US)</a></li>
-        <li id="u8-us-2"><a href="pages/u8_us_2.html">CD-HD Edition (US)</a></li>
-        <li id="u8-us-sp"><a href="pages/u8_us_sp.html">Speech Pack (US)</a></li>
-        <li id="u8-uk-1"><a href="pages/u8_uk_1.html">Disk Edition (UK)</a></li>
-        <li id="u8-uk-2"><a href="pages/u8_uk_2.html">CD-HD Edition (UK)</a></li>
-        <li id="u8-uk-sp"><a href="pages/u8_uk_sp.html">Speech Pack (UK)</a></li>
-        <li id="u8-de-1"><a href="pages/u8_de_1.html">Disk Edition (DE)</a></li>
-        <li id="u8-de-2"><a href="pages/u8_de_2.html">CD-HD Edition (DE)</a></li>
-        <li id="u8-de-sp"><a href="pages/u8_de_sp.html">Speech Pack (DE)</a></li>
-        <li id="u8-fr-1"><a href="pages/u8_fr_1.html">Disk Edition (FR)</a></li>
-        <li id="u8-fr-2"><a href="pages/u8_fr_2.html">CD-HD Edition (FR)</a></li>
-        <li id="u8-fr-sp"><a href="pages/u8_fr_sp.html">Speech Pack (FR)</a></li>
-        <li id="u8-it-1"><a href="pages/u8_it_1.html">Disk Edition (IT)</a></li>
-        <li id="u8-it-2"><a href="pages/u8_it_2.html">CD-HD Edition (IT)</a></li>
-        <li id="u8-es-1"><a href="pages/u8_es_1.html">Disk Edition (ES)</a></li>
-        <li id="u8-jp-1"><a href="pages/u8_jp_1.html">DOS/V CD Edition (JP)</a></li>
-        <li id="u8-cn-1"><a href="pages/u8_cn_1.html">Chinese Edition (TW)</a></li>
-        <li id="u8-kr-1"><a href="pages/u8_kr_1.html">Korean Edition (KR)</a></li>
-        <li id="u8-us-3"><a href="pages/u8_us_3.html">Publishers Choice Edition (US)</a></li>
-        <li id="u8-cl-1"><a href="pages/u8_cl_1.html">EA Classics Gold</a></li>
-        <li id="u8-cl-2"><a href="pages/u8_cl_2.html">EA Classics Gold Big Box</a></li>
-        <li id="u8-cl-3"><a href="pages/u8_cl_3.html">EA Classics (EU/DE)</a></li>
-        <li id="u8-cl-4"><a href="pages/u8_cl_4.html">EA Classics (EU/UK)</a></li>
-        <li id="u8-cl-5"><a href="pages/u8_cl_5.html">EA Classics (EU/FR)</a></li>
-        <li id="u8-aus-1"><a href="pages/u8_aus_1.html">Manaccom Edition (AU)</a></li>
-        <li id="u8-aus-2"><a href="pages/u8_aus_2.html">CD Classix (AU)</a></li>
-        <li id="u8-aus-3"><a href="pages/u8_aus_3.html">CD Classix II (AU)</a></li>
-        <li id="u8-pl-1"><a href="pages/u8_pl_1.html">Zielona Seria Classics (PL)</a></li>
-        <li id="u8-it-3"><a href="pages/u8_it_3.html">Collezione Cd-Rom (IT)</a></li>
-        <li id="u8-aus-4"><a href="pages/u8_aus_4.html">Best Sellers Edition (SG)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9821</strong>
-      <ul>
-        <li id="u8-pc98-1"><a href="pages/u8_pc98_1.html">Disk Edition (JP)</a></li>
-        <li id="u8-pc98-2"><a href="pages/u8_pc98_2.html">CD-HD Edition (JP)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-ix-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-ix-1">▶</span> Ultima IX
-      </span>
-      <div class="category-content" id="cat-ultima-ix-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="u9-us-1"><a href="pages/u9_us_1.html">Standard Edition (US)</a></li>
-        <li id="u9-us-2"><a href="pages/u9_us_2.html">Dragon Edition (US)</a></li>
-        <li id="u9-uk-1"><a href="pages/u9_uk_1.html">EU Standard Edition (UK)</a></li>
-        <li id="u9-de-1"><a href="pages/u9_de_1.html">EU Standard Edition (DE)</a></li>
-        <li id="u9-fr-1"><a href="pages/u9_fr_1.html">EU Standard Edition (FR)</a></li>
-        <li id="u9-it-1"><a href="pages/u9_it_1.html">EU Standard Edition (IT)</a></li>
-        <li id="u9-nl-1"><a href="pages/u9_nl_1.html">EU Standard Edition (NL/GR)</a></li>
-        <li id="u9-es-1"><a href="pages/u9_es_1.html">Spanish Edition (ES)</a></li>
-        <li id="u9-pt-2"><a href="pages/u9_pt_2.html">Portuguese Edition (PT)</a></li>
-        <li id="u9-pl-1"><a href="pages/u9_pl_1.html">Polish Edition (PL)</a></li>
-        <li id="u9-pl-2"><a href="pages/u9_pl_2.html">Polish EA Classics (PL)</a></li>
-        <li id="u9-aus-1"><a href="pages/u9_aus_1.html">Australia Edition (AU)</a></li>
-        <li id="u9-as-1"><a href="pages/u9_as_1.html">Asia-Pacific Dragon Edition</a></li>
-        <li id="u9-jp-1"><a href="pages/u9_jp_1.html">Jap. Standard Edition (JP)</a></li>
-        <li id="u9-jp-2"><a href="pages/u9_jp_2.html">Premium Edition (JP)</a></li>
-        <li id="u9-jp-3"><a href="pages/u9_jp_3.html">EA Best Selections (JP)</a></li>
-        <li id="u9-jp-4"><a href="pages/u9_jp_4.html">EA Best Selections II (JP)</a></li>
-        <li id="u9-ru-1"><a href="pages/u9_ru_1.html">Russian Edition (RU)</a></li>
-        <li id="u9-th-1"><a href="pages/u9_th_1.html">Thai Edition (TH)</a></li>
-        <li id="u9-br-1"><a href="pages/u9_br_1.html">Brazil Edition (BR)</a></li>
-        <li id="u9-cn-1"><a href="pages/u9_cn_1.html">Chinese Edition (TW)</a></li>
-        <li id="u9-kr-1"><a href="pages/u9_kr_1.html">Korean Edition (KR)</a></li>
-        <li id="u9-za-1"><a href="pages/u9_za_1.html">South African Edition (ZA)</a></li>
-        <li id="u9-pt-1"><a href="pages/u9_pt_1.html">Portuguese Budget Edition (PT)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-  </ul>
-    </div>
-  </li>
-  <!-- Ultima Underworld Series -->
-  <li>
-    <span class="category-toggle level-0" onclick="toggleCategory('cat-ultima-underworld-series-0')">
-      <span class="toggle-icon" id="icon-cat-ultima-underworld-series-0">▶</span> Ultima Underworld Series
-    </span>
-    <div class="category-content" id="cat-ultima-underworld-series-0" style="display: none;">
-  <ul>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-underworld-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-underworld-1">▶</span> Ultima Underworld
-      </span>
-      <div class="category-content" id="cat-ultima-underworld-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">FM Towns</strong>
-      <ul>
-        <li id="uw1-fmtowns-1"><a href="pages/uw1_fmtowns_1.html">Japanese Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="uw1-pc-1"><a href="pages/uw1_pc_1.html">Standard Edition 3.5HD (US)</a></li>
-        <li id="uw1-pc-6"><a href="pages/uw1_pc_6.html">Standard Edition 5.25HD (US)</a></li>
-        <li id="uw1-pc-2"><a href="pages/uw1_pc_2.html">Standard Edition 3.5HD (EU)</a></li>
-        <li id="uw1-pc-7"><a href="pages/uw1_pc_7.html">Standard Edition 5.25HD (EU)</a></li>
-        <li id="uw1-pc-3"><a href="pages/uw1_pc_3.html">Special Promotional Release</a></li>
-        <li id="uw1-pc-4"><a href="pages/uw1_pc_4.html">Hitsquad Edition (UK)</a></li>
-        <li id="uw1-pc-5"><a href="pages/uw1_pc_5.html">EA Edition 3.5HD (EU)</a></li>
-        <li id="uw1-pc-8"><a href="pages/uw1_pc_8.html">Chinese Edition (TW)</a></li>
-        <li id="uw1-pc-11"><a href="pages/uw1_pc_11.html">Korean Edition (KR)</a></li>
-        <li id="uw1-pc-9"><a href="pages/uw1_pc_9.html">Polish Edition 3.5HD (PL)</a></li>
-        <li id="uw1-pc-10"><a href="pages/uw1_pc_10.html">Polish Edition 5.25HD (PL)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9801</strong>
-      <ul>
-        <li id="uw1-pc98-1"><a href="pages/uw1_pc98_1.html">Disk Ed. 3.5HD 256 Color (JP)</a></li>
-        <li id="uw1-pc98-2"><a href="pages/uw1_pc98_2.html">Disk Ed. 5HD 256 Color (JP)</a></li>
-        <li id="uw1-pc98-3"><a href="pages/uw1_pc98_3.html">Disk Ed. 3.5HD 16 Color (JP)</a></li>
-        <li id="uw1-pc98-4"><a href="pages/uw1_pc98_4.html">Disk Ed. 5HD 16 Color (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Playstation</strong>
-      <ul>
-        <li id="uw1-psx-1"><a href="pages/uw1_psx_1.html">Playstation Remake (JP)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">Pocket PC</strong>
-      <ul>
-        <li id="uw1-ppc-1"><a href="pages/uw1_ppc_1.html">Pocket PC Edition (US)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-underworld-ii-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-underworld-ii-1">▶</span> Ultima Underworld II
-      </span>
-      <div class="category-content" id="cat-ultima-underworld-ii-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">FM Towns</strong>
-      <ul>
-        <li id="uw2-fmtowns-1"><a href="pages/uw2_fmtowns_1.html">Japanese Edition</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="uw2-pc-1"><a href="pages/uw2_pc_1.html">Standard Edition (US)</a></li>
-        <li id="uw2-pc-2"><a href="pages/uw2_pc_2.html">EU Edition 3.5HD (UK)</a></li>
-        <li id="uw2-pc-3"><a href="pages/uw2_pc_3.html">EU Edition 3.5HD (DE)</a></li>
-        <li id="uw2-pc-4"><a href="pages/uw2_pc_4.html">EU Edition 3.5HD (FR)</a></li>
-        <li id="uw2-pc-5"><a href="pages/uw2_pc_5.html">EU Edition 5.25HD (UK)</a></li>
-        <li id="uw2-pc-6"><a href="pages/uw2_pc_6.html">Polish Edition (PL)</a></li>
-        <li id="uw2-pc-7"><a href="pages/uw2_pc_7.html">Korean Edition (KR)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9801</strong>
-      <ul>
-        <li id="uw2-pc98-1"><a href="pages/uw2_pc98_1.html">Disk Edition 5HD (JP)</a></li>
-        <li id="uw2-pc98-2"><a href="pages/uw2_pc98_2.html">Disk Edition 3.5HD (JP)</a></li>
-        <li id="uw2-pc98-3"><a href="pages/uw2_pc98_3.html">CD Edition (JP)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-  </ul>
-    </div>
-  </li>
-  <!-- Worlds of Ultima Series -->
-  <li>
-    <span class="category-toggle level-0" onclick="toggleCategory('cat-worlds-of-ultima-series-0')">
-      <span class="toggle-icon" id="icon-cat-worlds-of-ultima-series-0">▶</span> Worlds of Ultima Series
-    </span>
-    <div class="category-content" id="cat-worlds-of-ultima-series-0" style="display: none;">
-  <ul>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-savage-empire-1')">
-        <span class="toggle-icon" id="icon-cat-savage-empire-1">▶</span> Savage Empire
-      </span>
-      <div class="category-content" id="cat-savage-empire-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="wou1-pc-1"><a href="pages/wou1_pc_1.html">Standard Edition 5.25HD (US)</a></li>
-        <li id="wou1-pc-4"><a href="pages/wou1_pc_4.html">Standard Edition 3.5LD (US)</a></li>
-        <li id="wou1-pc-2"><a href="pages/wou1_pc_2.html">Standard Edition 5.25LD (EU)</a></li>
-        <li id="wou1-pc-5"><a href="pages/wou1_pc_5.html">Standard Edition 5.25HD (EU)</a></li>
-        <li id="wou1-pc-6"><a href="pages/wou1_pc_6.html">Standard Edition 3.5LD (EU)</a></li>
-        <li id="wou1-pc-3"><a href="pages/wou1_pc_3.html">Special Edition 5.25HD (US)</a></li>
-        <li id="wou1-pc-7"><a href="pages/wou1_pc_7.html">Chinese Edition (TW)</a></li>
-        <li id="wou1-pc-8"><a href="pages/wou1_pc_8.html">Korean Edition (KR)</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">PC-9801</strong>
-      <ul>
-        <li id="wou1-pc98-1"><a href="pages/wou1_pc98_1.html">Japanese Edition 5.25HD</a></li>
-        <li id="wou1-pc98-2"><a href="pages/wou1_pc98_2.html">Japanese Edition 3.5HD</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">SFC</strong>
-      <ul>
-        <li id="wou1-sfc-1"><a href="pages/wou1_sfc_1.html">Japanese SFC Version</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">X68000</strong>
-      <ul>
-        <li id="wou1-x68000-1"><a href="pages/wou1_x68000_1.html">Japanese Edition</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-martian-dreams-1')">
-        <span class="toggle-icon" id="icon-cat-martian-dreams-1">▶</span> Martian Dreams
-      </span>
-      <div class="category-content" id="cat-martian-dreams-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">IBM PC</strong>
-      <ul>
-        <li id="wou2-pc-1"><a href="pages/wou2_pc_1.html">Standard Edition 5.25HD (US)</a></li>
-        <li id="wou2-pc-4"><a href="pages/wou2_pc_4.html">Standard Edition 3.5HD (US)</a></li>
-        <li id="wou2-pc-2"><a href="pages/wou2_pc_2.html">Standard Edition 5.25HD (EU)</a></li>
-        <li id="wou2-pc-5"><a href="pages/wou2_pc_5.html">Standard Edition 3.5HD (EU)</a></li>
-        <li id="wou2-pc-6"><a href="pages/wou2_pc_6.html">Standard Edition 3.5LD (EU)</a></li>
-        <li id="wou2-pc-3"><a href="pages/wou2_pc_3.html">GT Interactive Edition</a></li>
-        <li id="wou2-pc-7"><a href="pages/wou2_pc_7.html">Chinese Edition (TW)</a></li>
-        <li id="wou2-pc-8"><a href="pages/wou2_pc_8.html">Korean Edition (KR)</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-  </ul>
-    </div>
-  </li>
-  <!-- Runes of Virtue Series -->
-  <li>
-    <span class="category-toggle level-0" onclick="toggleCategory('cat-runes-of-virtue-series-0')">
-      <span class="toggle-icon" id="icon-cat-runes-of-virtue-series-0">▶</span> Runes of Virtue Series
-    </span>
-    <div class="category-content" id="cat-runes-of-virtue-series-0" style="display: none;">
-  <ul>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-runes-of-virtue-1')">
-        <span class="toggle-icon" id="icon-cat-runes-of-virtue-1">▶</span> Runes of Virtue
-      </span>
-      <div class="category-content" id="cat-runes-of-virtue-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">Gameboy</strong>
-      <ul>
-        <li id="rov1-gb-1"><a href="pages/rov1_gb_1.html">Standard Version</a></li>
-        <li id="rov1-gb-2"><a href="pages/rov1_gb_2.html">Japanese Version</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-runes-of-virtue-ii-1')">
-        <span class="toggle-icon" id="icon-cat-runes-of-virtue-ii-1">▶</span> Runes of Virtue II
-      </span>
-      <div class="category-content" id="cat-runes-of-virtue-ii-1" style="display: none;">
-    <ul>
-      <li>
-        <strong class="level-2">Gameboy</strong>
-      <ul>
-        <li id="rov2-gb-1"><a href="pages/rov2_gb_1.html">Standard Version</a></li>
-        <li id="rov2-gb-2"><a href="pages/rov2_gb_2.html">Japanese Version</a></li>
-      </ul>
-      </li>
-      <li>
-        <strong class="level-2">SNES</strong>
-      <ul>
-        <li id="rov2-snes-1"><a href="pages/rov2_snes_1.html">Standard SNES Version</a></li>
-        <li id="rov2-sfc-1"><a href="pages/rov2_sfc_1.html">Japanese SFC Version</a></li>
-      </ul>
-      </li>
-    </ul>
-      </div>
-    </li>
-  </ul>
-    </div>
-  </li>
-  <!-- Ultima Online Series -->
-  <li>
-    <span class="category-toggle level-0" onclick="toggleCategory('cat-ultima-online-0')">
-      <span class="toggle-icon" id="icon-cat-ultima-online-0">▶</span> Ultima Online
-    </span>
-    <div class="category-content" id="cat-ultima-online-0" style="display: none;">
-  <ul>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-online-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-online-1">▶</span> Ultima Online
-      </span>
-      <div class="category-content" id="cat-ultima-online-1" style="display: none;">
-    <ul>
-      <li id="uo-or-us-1"><a href="pages/uo_or_us_1.html">Regular Edition</a></li>
-      <li id="uo-or-us-2"><a href="pages/uo_or_us_2.html">Charter Edition</a></li>
-      <li id="uo-or-jp-1"><a href="pages/uo_or_jp_1.html">Japanese Edition</a></li>
-      <li id="uo-or-jp-2"><a href="pages/uo_or_jp_2.html">Japanese Budget Edition</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-the-second-age-1')">
-        <span class="toggle-icon" id="icon-cat-the-second-age-1">▶</span> The Second Age
-      </span>
-      <div class="category-content" id="cat-the-second-age-1" style="display: none;">
-    <ul>
-      <li id="uo-t2a-us-1"><a href="pages/uo_t2a_us_1.html">Standard Edition (US)</a></li>
-      <li id="uo-t2a-us-2"><a href="pages/uo_t2a_us_2.html">Second Edition (US)</a></li>
-      <li id="uo-t2a-us-3"><a href="pages/uo_t2a_us_3.html">Upgrade Edition (US)</a></li>
-      <li id="uo-t2a-uk-1"><a href="pages/uo_t2a_uk_1.html">EU Edition (UK)</a></li>
-      <li id="uo-t2a-de-1"><a href="pages/uo_t2a_de_1.html">EU Edition (DE)</a></li>
-      <li id="uo-t2a-jp-5"><a href="pages/uo_t2a_jp_5.html">1st Japanese Edition</a></li>
-      <li id="uo-t2a-jp-1"><a href="pages/uo_t2a_jp_1.html">Japanese Upgrade Edition</a></li>
-      <li id="uo-t2a-jp-2"><a href="pages/uo_t2a_jp_2.html">2nd Japanese Edition</a></li>
-      <li id="uo-t2a-jp-3"><a href="pages/uo_t2a_jp_3.html">3rd Japanese Edition</a></li>
-      <li id="uo-t2a-jp-4"><a href="pages/uo_t2a_jp_4.html">Convenience Store Edition (JP)</a></li>
-      <li id="uo-t2a-cn-1"><a href="pages/uo_t2a_cn_1.html">Chinese Edition (TW)</a></li>
-      <li id="uo-t2a-kr-1"><a href="pages/uo_t2a_kr_1.html">Korean Edition (KR)</a></li>
-      <li id="uo-t2a-kr-2"><a href="pages/uo_t2a_kr_2.html">2nd Korean Edition (KR)</a></li>
-      <li id="uo-t2a-aus-1"><a href="pages/uo_t2a_aus_1.html">Discovery Edition (AU)</a></li>
-      <li id="uo-t2a-ru-1"><a href="pages/uo_t2a_ru_1.html">Russian Edition (RU)</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-renaissance-1')">
-        <span class="toggle-icon" id="icon-cat-renaissance-1">▶</span> Renaissance
-      </span>
-      <div class="category-content" id="cat-renaissance-1" style="display: none;">
-    <ul>
-      <li id="uo-ren-us-1"><a href="pages/uo_ren_us_1.html">Standard Edition (US)</a></li>
-      <li id="uo-ren-uk-1"><a href="pages/uo_ren_uk_1.html">EU Edition (UK)</a></li>
-      <li id="uo-ren-de-1"><a href="pages/uo_ren_de_1.html">EU Edition (DE)</a></li>
-      <li id="uo-ren-fr-1"><a href="pages/uo_ren_fr_1.html">EU Edition (FR)</a></li>
-      <li id="uo-ren-jp-1"><a href="pages/uo_ren_jp_1.html">Japanese Edition (JP)</a></li>
-      <li id="uo-ne-jp-1"><a href="pages/uo_ne_jp_1.html">New Ultima Online (JP)</a></li>
-      <li id="uo-ne-jp-2"><a href="pages/uo_ne_jp_2.html">New Ultima Online - XP (JP)</a></li>
-      <li id="uo-ren-cn-1"><a href="pages/uo_ren_cn_1.html">Chinese Edition (TW)</a></li>
-      <li id="uo-ren-us-2"><a href="pages/uo_ren_us_2.html">EA Classics Edition (US)</a></li>
-      <li id="uo-ren-ru-1"><a href="pages/uo_ren_ru_1.html">Russian Edition (RU)</a></li>
-      <li id="uo-ren-aus-1"><a href="pages/uo_ren_aus_1.html">Asia Pacific Edition (AUS)</a></li>
-      <li id="uo-ren-kr-1"><a href="pages/uo_ren_kr_1.html">Korean Edition (KR)</a></li>
-      <li id="uo-ren-kr-2"><a href="pages/uo_ren_kr_2.html">PC Power Zine Edition (KR)</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-third-dawn-1')">
-        <span class="toggle-icon" id="icon-cat-third-dawn-1">▶</span> Third Dawn
-      </span>
-      <div class="category-content" id="cat-third-dawn-1" style="display: none;">
-    <ul>
-      <li id="uo-td-us-1"><a href="pages/uo_td_us_1.html">US Edition</a></li>
-      <li id="uo-td-us-2"><a href="pages/uo_td_us_2.html">US Upgrade Edition</a></li>
-      <li id="uo-td-uk-1"><a href="pages/uo_td_uk_1.html">EU Edition (UK)</a></li>
-      <li id="uo-td-de-1"><a href="pages/uo_td_de_1.html">EU Edition (German)</a></li>
-      <li id="uo-td-fr-1"><a href="pages/uo_td_fr_1.html">EU Edition (French)</a></li>
-      <li id="uo-td-it-1"><a href="pages/uo_td_it_1.html">EU Edition (Italian)</a></li>
-      <li id="uo-td-es-1"><a href="pages/uo_td_es_1.html">EU Edition (Spanish)</a></li>
-      <li id="uo-td-pl-1"><a href="pages/uo_td_pl_1.html">PL Poland Edition</a></li>
-      <li id="uo-td-ru-1"><a href="pages/uo_td_ru_1.html">RU Russian Edition</a></li>
-      <li id="uo-td-jp-1"><a href="pages/uo_td_jp_1.html">JP New Player Edition</a></li>
-      <li id="uo-td-jp-2"><a href="pages/uo_td_jp_2.html">JP Upgrade Edition</a></li>
-      <li id="uo-td-jp-3"><a href="pages/uo_td_jp_3.html">JP Convenience Store Edition</a></li>
-      <li id="uo-td-cn-1"><a href="pages/uo_td_cn_1.html">TW Chinese Edition</a></li>
-      <li id="uo-td-cn-2"><a href="pages/uo_td_cn_2.html">TW Chinese Limited Edition</a></li>
-      <li id="uo-td-kr-1"><a href="pages/uo_td_kr_1.html">KR Korean Edition</a></li>
-      <li id="uo-td-kr-2"><a href="pages/uo_td_kr_2.html">KR JuJu Club Edition</a></li>
-      <li id="uo-td-aus-1"><a href="pages/uo_td_aus_1.html">AU Asia Pacific Edition</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-lord-blackthorns-revenge-1')">
-        <span class="toggle-icon" id="icon-cat-lord-blackthorns-revenge-1">▶</span> Lord Blackthorn's Revenge
-      </span>
-      <div class="category-content" id="cat-lord-blackthorns-revenge-1" style="display: none;">
-    <ul>
-      <li id="uo-lbr-us-1"><a href="pages/uo_lbr_us_1.html">US Limited Edition</a></li>
-      <li id="uo-lbr-us-2"><a href="pages/uo_lbr_us_2.html">US Standard Edition</a></li>
-      <li id="uo-lbr-uk-1"><a href="pages/uo_lbr_uk_1.html">EU Edition (UK)</a></li>
-      <li id="uo-lbr-de-1"><a href="pages/uo_lbr_de_1.html">EU Edition (German)</a></li>
-      <li id="uo-lbr-fr-1"><a href="pages/uo_lbr_fr_1.html">EU Edition (French)</a></li>
-      <li id="uo-lbr-es-1"><a href="pages/uo_lbr_es_1.html">EU Edition (Spanish)</a></li>
-      <li id="uo-lbr-jp-1"><a href="pages/uo_lbr_jp_1.html">JP New Player Edition</a></li>
-      <li id="uo-lbr-jp-2"><a href="pages/uo_lbr_jp_2.html">JP Upgrade Edition</a></li>
-      <li id="uo-lbr-jp-3"><a href="pages/uo_lbr_jp_3.html">JP Convenience Store Edition</a></li>
-      <li id="uo-5th-jp-1"><a href="pages/uo_5th_jp_1.html">JP 5th Ann. Edition - Soldiers</a></li>
-      <li id="uo-5th-jp-2"><a href="pages/uo_5th_jp_2.html">JP 5th Ann. Edition - Mages</a></li>
-      <li id="uo-5th-jp-3"><a href="pages/uo_5th_jp_3.html">JP 5th Ann. Edition - Smiths</a></li>
-      <li id="uo-5th-jp-4"><a href="pages/uo_5th_jp_4.html">JP 5th Ann. - Amazon Edition</a></li>
-      <li id="uo-lbr-cn-1"><a href="pages/uo_lbr_cn_1.html">Chinese Edition</a></li>
-      <li id="uo-lbr-kr-1"><a href="pages/uo_lbr_kr_1.html">Korean Edition</a></li>
-      <li id="uo-lbr-kr-2"><a href="pages/uo_lbr_kr_2.html">Korean Special Edition</a></li>
-      <li id="uo-lbr-aus-1"><a href="pages/uo_lbr_aus_1.html">Asia Pacific Edition</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-age-of-shadows-1')">
-        <span class="toggle-icon" id="icon-cat-age-of-shadows-1">▶</span> Age of Shadows
-      </span>
-      <div class="category-content" id="cat-age-of-shadows-1" style="display: none;">
-    <ul>
-      <li id="uo-aos-us-1"><a href="pages/uo_aos_us_1.html">US Edition</a></li>
-      <li id="uo-aos-uk-1"><a href="pages/uo_aos_uk_1.html">EU Edition (UK)</a></li>
-      <li id="uo-aos-de-1"><a href="pages/uo_aos_de_1.html">EU Edition (German)</a></li>
-      <li id="uo-aos-fr-1"><a href="pages/uo_aos_fr_1.html">EU Edition (French)</a></li>
-      <li id="uo-aos-es-1"><a href="pages/uo_aos_es_1.html">EU Edition (Spanish)</a></li>
-      <li id="uo-aos-pl-1"><a href="pages/uo_aos_pl_1.html">EU Edition (Polish)</a></li>
-      <li id="uo-aos-jp-1"><a href="pages/uo_aos_jp_1.html">JP New Player Edition</a></li>
-      <li id="uo-aos-jp-2"><a href="pages/uo_aos_jp_2.html">JP Upgrade Edition</a></li>
-      <li id="uo-aos-jp-3"><a href="pages/uo_aos_jp_3.html">JP Convenience Store Edition</a></li>
-      <li id="uo-ne-jp-3"><a href="pages/uo_ne_jp_3.html">JP New Ultima Online 2003 Edition</a></li>
-      <li id="uo-ne-jp-4"><a href="pages/uo_ne_jp_4.html">JP New Ultima Online 2004 Edition</a></li>
-      <li id="uo-ne-jp-5"><a href="pages/uo_ne_jp_5.html">JP Ultima Online (Limited)</a></li>
-      <li id="uo-ne-jp-6"><a href="pages/uo_ne_jp_6.html">JP Ultima Online</a></li>
-      <li id="uo-ne-jp-7"><a href="pages/uo_ne_jp_7.html">JP Ultima Online (SE Campaign Ed.)</a></li>
-      <li id="uo-aos-cn-1"><a href="pages/uo_aos_cn_1.html">Chinese Edition</a></li>
-      <li id="uo-aos-kr-1"><a href="pages/uo_aos_kr_1.html">Korean Edition</a></li>
-      <li id="uo-aos-aus-1"><a href="pages/uo_aos_aus_1.html">Asia Pacific Edition</a></li>
-      <li id="uo-7th-us-1"><a href="pages/uo_7th_us_1.html">7th Anniversary Edition</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-samurai-empire-1')">
-        <span class="toggle-icon" id="icon-cat-samurai-empire-1">▶</span> Samurai Empire
-      </span>
-      <div class="category-content" id="cat-samurai-empire-1" style="display: none;">
-    <ul>
-      <li id="uo-se-us-1"><a href="pages/uo_se_us_1.html">US Edition</a></li>
-      <li id="uo-se-uk-1"><a href="pages/uo_se_uk_1.html">EU Edition (UK)</a></li>
-      <li id="uo-se-de-1"><a href="pages/uo_se_de_1.html">EU Edition (DE)</a></li>
-      <li id="uo-se-jp-1"><a href="pages/uo_se_jp_1.html">JP New Player Edition</a></li>
-      <li id="uo-se-jp-2"><a href="pages/uo_se_jp_2.html">JP Upgrade Edition</a></li>
-      <li id="uo-se-jp-3"><a href="pages/uo_se_jp_3.html">JP Convenience Store Edition</a></li>
-      <li id="uo-gd-us-1"><a href="pages/uo_gd_us_1.html">US Ultima Online Gold</a></li>
-      <li id="uo-8th-us-1"><a href="pages/uo_8th_us_1.html">US The Eighth Age</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-mondains-legacy-1')">
-        <span class="toggle-icon" id="icon-cat-mondains-legacy-1">▶</span> Mondain's Legacy
-      </span>
-      <div class="category-content" id="cat-mondains-legacy-1" style="display: none;">
-    <ul>
-      <li id="uo-ml-us-1"><a href="pages/uo_ml_us_1.html">Backup CD Set</a></li>
-      <li id="uo-ml-jp-1"><a href="pages/uo_ml_jp_1.html">JP New Player Edition</a></li>
-      <li id="uo-ml-jp-2"><a href="pages/uo_ml_jp_2.html">JP Upgrade Edition</a></li>
-      <li id="uo-ml-jp-3"><a href="pages/uo_ml_jp_3.html">JP New UO (HajiUO) Edition</a></li>
-      <li id="uo-ml-jp-4"><a href="pages/uo_ml_jp_4.html">JP Ultima Online 2006 Edition</a></li>
-      <li id="uo-ml-cn-1"><a href="pages/uo_ml_cn_1.html">CN Starter Pack</a></li>
-      <li id="uo-9th-us-1"><a href="pages/uo_9th_us_1.html">US 9th Anniversary Collection</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-kingdom-reborn-1')">
-        <span class="toggle-icon" id="icon-cat-kingdom-reborn-1">▶</span> Kingdom Reborn
-      </span>
-      <div class="category-content" id="cat-kingdom-reborn-1" style="display: none;">
-    <ul>
-      <li id="uo-kr-us-1"><a href="pages/uo_kr_us_1.html">Backup DVD-ROM</a></li>
-      <li id="uo-kr-jp-1"><a href="pages/uo_kr_jp_1.html">JP 7 Day Trial DVD</a></li>
-      <li id="uo-kr-jp-2"><a href="pages/uo_kr_jp_2.html">JP Gametime 45 DVD Starter Kit</a></li>
-    </ul>
-      </div>
-    </li>
-  </ul>
-    </div>
-  </li>
-  <!-- Compilation Series -->
-  <li> 
-    <span class="category-toggle level-0" onclick="toggleCategory('cat-compilations-0')">
-      <span class="toggle-icon" id="icon-cat-compilations-0">▶</span> Compilations
-    </span>
-    <div class="category-content" id="cat-compilations-0" style="display: none;">
-  <ul>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-trilogy-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-trilogy-1">▶</span> Ultima Trilogy I II III
-      </span>
-      <div class="category-content" id="cat-ultima-trilogy-1" style="display: none;">
-    <ul>
-      <li id="u13-apple-1"><a href="pages/u13_apple_1.html">Standard Edition Apple II</a></li>
-      <li id="u13-c64-1"><a href="pages/u13_c64_1.html">Standard Edition C64</a></li>
-      <li id="u13-c64-2"><a href="pages/u13_c64_2.html">Second Edition C64</a></li>
-      <li id="u13-pc-1"><a href="pages/u13_pc_1.html">Standard Edition IBM PC</a></li>
-      <li id="u13-pc-4"><a href="pages/u13_pc_4.html">Second Edition IBM PC</a></li>
-      <li id="u13-fmtowns-1"><a href="pages/u13_fmtowns_1.html">FM Towns Edition (JP)</a></li>
-      <li id="u13-pc-2"><a href="pages/u13_pc_2.html">Microprose PC Edition (EU)</a></li>
-      <li id="u13-c64-3"><a href="pages/u13_c64_3.html">Microprose C64 Edition (EU)</a></li>
-      <li id="u13-pc-3"><a href="pages/u13_pc_3.html">Chinese Edition IBM PC</a></li>
-      <li id="u13-pc-5"><a href="pages/u13_pc_5.html">Korean Edition IBM PC</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-second-trilogy-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-second-trilogy-1">▶</span> Ultima Second Trilogy IV V VI
-      </span>
-      <div class="category-content" id="cat-ultima-second-trilogy-1" style="display: none;">
-    <ul>
-      <li id="u46-pc-1"><a href="pages/u46_pc_1.html">Standard Edition 5.25LD PC</a></li>
-      <li id="u46-pc-2"><a href="pages/u46_pc_2.html">Standard Edition 3.5LD PC</a></li>
-      <li id="u46-pc-3"><a href="pages/u46_pc_3.html">Special Limited Edition 5.25LD PC</a></li>
-      <li id="u46-pc-4"><a href="pages/u46_pc_4.html">Special Limited Edition 3.5LD PC</a></li>
-      <li id="u46-pc-5"><a href="pages/u46_pc_5.html">Standard Edition 3.5LD PC (EU)</a></li>
-      <li id="u46-pc-7"><a href="pages/u46_pc_7.html">Standard Edition 5.25LD PC (EU)</a></li>
-      <li id="u46-pc-6"><a href="pages/u46_pc_6.html">EA Edition PC 5.25LD PC (EU)</a></li>
-      <li id="u46-c64-1"><a href="pages/u46_c64_1.html">Standard Edition C64 (EU)</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-1-6-series-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-1-6-series-1">▶</span> Ultima I-VI Series
-      </span>
-      <div class="category-content" id="cat-ultima-1-6-series-1" style="display: none;">
-    <ul>
-      <li id="u16-pc-1"><a href="pages/u16_pc_1.html">Software Toolworks Edition</a></li>
-      <li id="u16-pc-2"><a href="pages/u16_pc_2.html">Standard Edition</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-collection-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-collection-1">▶</span> Ultima Collection
-      </span>
-      <div class="category-content" id="cat-ultima-collection-1" style="display: none;">
-    <ul>
-      <li id="uc-us-1"><a href="pages/uc_us_1.html">Standard Edition (US)</a></li>
-      <li id="uc-us-4"><a href="pages/uc_us_4.html">Prima Guide Edition (US)</a></li>
-      <li id="uc-us-2"><a href="pages/uc_us_2.html">EA CDROM Classics</a></li>
-      <li id="uc-us-3"><a href="pages/uc_us_3.html">Second EA CDROM Classics</a></li>
-      <li id="uc-eu-1"><a href="pages/uc_eu_1.html">EU Edition (UK)</a></li>
-      <li id="uc-aus-1"><a href="pages/uc_aus_1.html">Australia Edition (AU)</a></li>
-      <li id="uc-jp-4"><a href="pages/uc_jp_4.html">First Limited Edition (JP)</a></li>
-      <li id="uc-jp-1"><a href="pages/uc_jp_1.html">Standard Edition (JP)</a></li>
-      <li id="uc-jp-2"><a href="pages/uc_jp_2.html">EA Best Selections (JP)</a></li>
-      <li id="uc-jp-3"><a href="pages/uc_jp_3.html">EA Best Selections (JP) 2nd Ed.</a></li>
-      <li id="uc-cn-1"><a href="pages/uc_cn_1.html">Chinese Special Edition</a></li>
-      <li id="uc-kr-1"><a href="pages/uc_kr_1.html">Korean Edition</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-vii-complete-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-vii-complete-1">▶</span> The Complete Ultima VII
-      </span>
-      <div class="category-content" id="cat-ultima-vii-complete-1" style="display: none;">
-    <ul>
-      <li id="u7cpl-us-2"><a href="pages/u7cpl_us_2.html">Standard Edition (US)</a></li>
-      <li id="u7cpl-eu-1"><a href="pages/u7cpl_eu_1.html">Standard Edition (UK)</a></li>
-      <li id="u7cpl-eu-2"><a href="pages/u7cpl_eu_2.html">Standard Edition (DE)</a></li>
-      <li id="u7cpl-us-1"><a href="pages/u7cpl_us_1.html">Serpent Isle Edition (US)</a></li>
-      <li id="u7cpl-us-3"><a href="pages/u7cpl_us_3.html">EA Classics Edition</a></li>
-      <li id="u7cpl-us-4"><a href="pages/u7cpl_us_4.html">EA Classics Gold Edition</a></li>
-      <li id="u7cpl-eu-3"><a href="pages/u7cpl_eu_3.html">EA CDROM Classics (EU,DE)</a></li>
-      <li id="u7cpl-eu-4"><a href="pages/u7cpl_eu_4.html">EA CDROM Classics (EU,UK)</a></li>
-      <li id="u7cpl-eu-5"><a href="pages/u7cpl_eu_5.html">EA CDROM Classics (EU,FR)</a></li>
-      <li id="u7cpl-aus-1"><a href="pages/u7cpl_aus_1.html">Australia Edition</a></li>
-      <li id="u7cpl-pl-1"><a href="pages/u7cpl_pl_1.html">Polish CD Classics</a></li>
-      <li id="u7cpl-aus-2"><a href="pages/u7cpl_aus_2.html">Best Sellers Edition (SG)</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-underworld-series-1')">
-        <span class="toggle-icon" id="icon-cat-ultima-underworld-series-1">▶</span> Underworld Series
-      </span>
-      <div class="category-content" id="cat-ultima-underworld-series-1" style="display: none;">
-    <ul>
-      <li id="uws-us-1"><a href="pages/uws_us_1.html">Standard Edition</a></li>
-      <li id="uws-us-4"><a href="pages/uws_us_4.html">EA Classics Edition</a></li>
-      <li id="uws-us-3"><a href="pages/uws_us_3.html">EA Classics Gold Edition</a></li>
-      <li id="uws-us-4"><a href="pages/uws_us_4.html">EA CDROM Classics (US)</a></li>
-      <li id="uws-eu-1"><a href="pages/uws_eu_1.html">EA CDROM Classics (EU,DE)</a></li>
-      <li id="uws-eu-2"><a href="pages/uws_eu_2.html">EA CDROM Classics (EU,UK)</a></li>
-      <li id="uws-eu-3"><a href="pages/uws_eu_3.html">EA CDROM Classics (EU,FR)</a></li>
-      <li id="uws-aus-1"><a href="pages/uws_aus_1.html">Australia Edition</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-miscellaneous-1')">
-        <span class="toggle-icon" id="icon-cat-miscellaneous-1">▶</span> Miscellaneous
-      </span>
-      <div class="category-content" id="cat-miscellaneous-1" style="display: none;">
-    <ul>
-      <li id="lbsk-1"><a href="pages/lbsk_1.html">Lord British Starter Kit (US)</a></li>
-      <li id="uvp-pc-1"><a href="pages/uvp_pc_1.html">Ultima Value Pak PC (US)</a></li>
-      <li id="uvp-c64-1"><a href="pages/uvp_c64_1.html">Ultima Value Pak C64 (US)</a></li>
-      <li id="ugen-jp-1"><a href="pages/ugen_jp_1.html">Genesis of Ultima (JP)</a></li>
-      <li id="u9uo-us-1"><a href="pages/u9uo_us_1.html">Best of Both Worlds (US)</a></li>
-      <li id="u9uo-de-1"><a href="pages/u9uo_de_1.html">Ultima World Edition (DE)</a></li>
-      <li id="ucpl-jp-1"><a href="pages/ucpl_jp_1.html">Ultima Complete (JP)</a></li>
-      <li id="uo-7th-us-1"><a href="pages/uo_7th_us_1.html">7th Anniversary Edition (US)</a></li>
-    </ul>
-      </div>
-    </li>
-  </ul>
-    </div>
-  </li>
-  <!-- Others -->
-  <li>
-    <span class="category-toggle level-0" onclick="toggleCategory('cat-others-0')">
-      <span class="toggle-icon" id="icon-cat-others-0">▶</span> Others
-    </span>
-    <div class="category-content" id="cat-others-0" style="display: none;">
-  <ul>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-akalabeth-1')">
-        <span class="toggle-icon" id="icon-cat-akalabeth-1">▶</span> Akalabeth
-      </span>
-      <div class="category-content" id="cat-akalabeth-1" style="display: none;">
-    <ul>
-      <li id="ak-1"><a href="pages/ak_1.html">Computerland Version</a></li>
-      <li id="ak-2"><a href="pages/ak_2.html">California Pacific Edition</a></li>
-      <li id="ak-3"><a href="pages/ak_3.html">2nd California Pacific Edition</a></li>
-      <li id="ak-4"><a href="pages/ak_4.html">Progame Edition</a></li>
-    </ul>
-      </div>
-    </li>
-    <li>
-      <span class="category-toggle level-1" onclick="toggleCategory('cat-escape-from-mt-drash-1')">
-        <span class="toggle-icon" id="icon-cat-escape-from-mt-drash-1">▶</span> Escape from Mt. Drash
-      </span>
-      <div class="category-content" id="cat-escape-from-mt-drash-1" style="display: none;">
-    <ul>
-      <li id="mtdrash-1"><a href="pages/mtdrash_1.html">Vic-20 Version</a></li>
-    </ul>
-      </div>
-    </li>
-  </ul>
-    </div>
-  </li>
-  <!-- Map Index -->
-  <li>
-    <a href="maps.html" class="category-toggle level-0" onclick="handleMapIndexClick(event)" style="cursor: pointer; text-decoration: none; color: #2c3e50 !important; font-size: 1.3em; font-weight: bold; display: block; padding: 8px 0;">
-      <span class="toggle-icon" id="icon-map-index">🗺️</span> Map Index
-    </a>
-  </li>
-</ul>
-            </div>
-            
-            <div class="footer">
-               <p><strong>Original copyright: </strong>Original Content © 2000-2011 Holger Bachert / Tel</p>
-                <p>
-                    <a href="https://github.com/rudokemper/ultima-collectors-revitalized" target="_blank" class="github-link">
-                        <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
-                            <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/>
-                        </svg>
-                        View on GitHub
-                    </a>
-                </p>
-            </div>
-        </div>
 
-        <!-- Main Content Area (Desktop) -->
-        <div class="main-content desktop-only">
-            <iframe id="content-frame" class="content-frame" src="intro.html" title="Introduction">
-                <div class="loading-spinner"></div>
-            </iframe>
-        </div>
+      <div class="intro-image">
+        <a href="http://www.ultimacollectors.info/" target="_blank"><img src="images/intro.jpg"
+            alt="Ultima Collectors Guide" /></a>
+      </div>
+
+      <div class="description-section">
+        <p>This resource is a revitalization of the classic <a href="http://www.ultimacollectors.info/"
+            target="_blank">Ultima Collectors Guide</a> originally created by Holger Bachert, and last updated on
+          December 3rd, 2011. Their comprehensive collection documented the rich history of the Ultima series of
+          computer role-playing games across countless platforms and editions.</p>
+        <p>This modernized version presents the same information in a more accessible, mobile-friendly format with
+          improved navigation and contemporary web standards. It was done using Python and BeautifulSoup. None of the
+          content was altered in doing this, and the author has given permission to use the content here, but the
+          original website is still the best source of information and may be updated in the future.</p>
+      </div>
     </div>
+
+    <!-- Sidebar Navigation -->
+    <div class="sidebar">
+      <div class="sidebar-header desktop-only">
+        <h2><a href="#" onclick="loadPageInFrame('intro.html'); updateActiveLink(null); return false;">Ultima Collectors
+            Guide</a></h2>
+      </div>
+
+      <div class="nav-controls">
+        <button onclick="expandAll()">Expand All</button>
+        <button onclick="collapseAll()">Collapse All</button>
+      </div>
+
+      <div class="navigation">
+        <ul>
+          <!-- Ultima Main Series -->
+          <li>
+            <span class="category-toggle level-0" onclick="toggleCategory('cat-ultima-main-series-0')">
+              <span class="toggle-icon" id="icon-cat-ultima-main-series-0">▶</span> Ultima Main Series
+            </span>
+            <div class="category-content" id="cat-ultima-main-series-0" style="display: none;">
+              <ul>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-i-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-i-1">▶</span> Ultima I
+                  </span>
+                  <div class="category-content" id="cat-ultima-i-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">Apple II</strong>
+                        <ul>
+                          <li id="u1-apple-1"><a href="pages/u1_apple_1.html">1st Edition</a></li>
+                          <li id="u1-apple-2"><a href="pages/u1_apple_2.html">2nd Edition (Progame)</a></li>
+                          <li id="u1-apple-3"><a href="pages/u1_apple_3.html">Origin Remake</a></li>
+                          <li id="u1-apple-4"><a href="pages/u1_apple_4.html">Jing Hsun Edition (TW)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Apple IIGS</strong>
+                        <ul>
+                          <li id="u1-2gs-1"><a href="pages/u1_2gs_1.html">Vitesse Edition</a></li>
+                          <li id="u1-2gs-2"><a href="pages/u1_2gs_2.html">Shareware Solutions Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari 800</strong>
+                        <ul>
+                          <li id="u1-atari-1"><a href="pages/u1_atari_1.html">The Original (Sierra)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">C64</strong>
+                        <ul>
+                          <li id="u1-c64-1"><a href="pages/u1_c64_1.html">Origin Remake</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u1-pc-1"><a href="pages/u1_pc_1.html">Origin Remake</a></li>
+                          <li id="u1-pc-2"><a href="pages/u1_pc_2.html">Jing Hsun Edition (TW)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">MSX 2</strong>
+                        <ul>
+                          <li id="u1-msx-1"><a href="pages/u1_msx_1.html">Japanese Remake</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-8801</strong>
+                        <ul>
+                          <li id="u1-pc88-1"><a href="pages/u1_pc88_1.html">Japanese Remake</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-88VA</strong>
+                        <ul>
+                          <li id="u1-pc88va-1"><a href="pages/u1_pc88va_1.html">Japanese Remake</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9801</strong>
+                        <ul>
+                          <li id="u1-pc98-1"><a href="pages/u1_pc98_1.html">Japanese Remake 5.25LD</a></li>
+                          <li id="u1-pc98-2"><a href="pages/u1_pc98_2.html">Japanese Remake 3.5HD</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">X1</strong>
+                        <ul>
+                          <li id="u1-x1-1"><a href="pages/u1_x1_1.html">Japanese Remake</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-ii-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-ii-1">▶</span> Ultima II
+                  </span>
+                  <div class="category-content" id="cat-ultima-ii-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">Apple II</strong>
+                        <ul>
+                          <li id="u2-apple-1"><a href="pages/u2_apple_1.html">1st Big Box Edition</a></li>
+                          <li id="u2-apple-2"><a href="pages/u2_apple_2.html">2nd Big Box Edition</a></li>
+                          <li id="u2-apple-3"><a href="pages/u2_apple_3.html">3rd Big Box Edition</a></li>
+                          <li id="u2-apple-6"><a href="pages/u2_apple_6.html">Black Box Edition</a></li>
+                          <li id="u2-apple-4"><a href="pages/u2_apple_4.html">1st Grey Box Edition</a></li>
+                          <li id="u2-apple-5"><a href="pages/u2_apple_5.html">2nd Grey Box Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Apple Macintosh</strong>
+                        <ul>
+                          <li id="u2-mac-1"><a href="pages/u2_mac_1.html">Grey Box Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari 800</strong>
+                        <ul>
+                          <li id="u2-atari-1"><a href="pages/u2_atari_1.html">1st Big Box Edition</a></li>
+                          <li id="u2-atari-2"><a href="pages/u2_atari_2.html">2nd Big Box Edition</a></li>
+                          <li id="u2-atari-3"><a href="pages/u2_atari_3.html">Black Box Edition</a></li>
+                          <li id="u2-atari-4"><a href="pages/u2_atari_4.html">Grey Box Edition</a></li>
+                          <li id="u2-c64atari-1"><a href="pages/u2_c64atari_1.html">C64/Atari Combo Edition</a></li>
+                          <li id="u2-c64atari-2"><a href="pages/u2_c64atari_2.html">C64/Atari Combo MCC</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari ST</strong>
+                        <ul>
+                          <li id="u2-st-1"><a href="pages/u2_st_1.html">Grey Box Edition</a></li>
+                          <li id="u2-st-2"><a href="pages/u2_st_2.html">MCC Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">C64</strong>
+                        <ul>
+                          <li id="u2-c64-1"><a href="pages/u2_c64_1.html">Black Box Edition</a></li>
+                          <li id="u2-c64-2"><a href="pages/u2_c64_2.html">Grey Box Edition</a></li>
+                          <li id="u2-c64atari-1"><a href="pages/u2_c64atari_1.html">C64/Atari Combo Edition</a></li>
+                          <li id="u2-c64atari-2"><a href="pages/u2_c64atari_2.html">C64/Atari Combo MCC</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">FM-7/77</strong>
+                        <ul>
+                          <li id="u2-fm7-1"><a href="pages/u2_fm7_1.html">Starcraft Edition 5.25in (JP)</a></li>
+                          <li id="u2-fm77-1"><a href="pages/u2_fm77_1.html">Starcraft Edition 3.5in (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u2-pc-1"><a href="pages/u2_pc_1.html">Big Box Edition</a></li>
+                          <li id="u2-pc-2"><a href="pages/u2_pc_2.html">Black Box Edition</a></li>
+                          <li id="u2-pc-3"><a href="pages/u2_pc_3.html">1st Grey Box Edition</a></li>
+                          <li id="u2-pc-4"><a href="pages/u2_pc_4.html">2nd Grey Box Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">MSX 2</strong>
+                        <ul>
+                          <li id="u2-msx-1"><a href="pages/u2_msx_1.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-8801</strong>
+                        <ul>
+                          <li id="u2-pc88-1"><a href="pages/u2_pc88_1.html">Starcraft Edition (JP)</a></li>
+                          <li id="u2-pc88-2"><a href="pages/u2_pc88_2.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-88VA</strong>
+                        <ul>
+                          <li id="u2-pc88va-1"><a href="pages/u2_pc88va_1.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9801</strong>
+                        <ul>
+                          <li id="u2-pc98-5"><a href="pages/u2_pc98_5.html">Starcraft Edition 5.25LD (JP)</a></li>
+                          <li id="u2-pc98-4"><a href="pages/u2_pc98_4.html">Starcraft Edition 3.5LD (JP)</a></li>
+                          <li id="u2-pc98-1"><a href="pages/u2_pc98_1.html">Ponycanyon Remake 5.25HD (JP)</a></li>
+                          <li id="u2-pc98-2"><a href="pages/u2_pc98_2.html">Ponycanyon Remake 5.25LD (JP)</a></li>
+                          <li id="u2-pc98-3"><a href="pages/u2_pc98_3.html">Ponycanyon Remake 3.5HD (JP)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-iii-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-iii-1">▶</span> Ultima III
+                  </span>
+                  <div class="category-content" id="cat-ultima-iii-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">Amiga</strong>
+                        <ul>
+                          <li id="u3-amiga-1"><a href="pages/u3_amiga_1.html">Standard Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Apple II</strong>
+                        <ul>
+                          <li id="u3-apple-1"><a href="pages/u3_apple_1.html">1st Edition</a></li>
+                          <li id="u3-apple-2"><a href="pages/u3_apple_2.html">2nd Edition</a></li>
+                          <li id="u3-apple-3"><a href="pages/u3_apple_3.html">3rd Edition</a></li>
+                          <li id="u3-apple-4"><a href="pages/u3_apple_4.html">Ediciel French Edition</a></li>
+                          <li id="u3-apple-5"><a href="pages/u3_apple_5.html">Jing Hsun Edition (TW)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Apple Macintosh</strong>
+                        <ul>
+                          <li id="u3-mac-1"><a href="pages/u3_mac_1.html">Standard Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari 800</strong>
+                        <ul>
+                          <li id="u3-atari-1"><a href="pages/u3_atari_1.html">1st Edition</a></li>
+                          <li id="u3-atari-2"><a href="pages/u3_atari_2.html">2nd Edition</a></li>
+                          <li id="u3-ataric64-1"><a href="pages/u3_ataric64_1.html">C64/Atari Combo Edition</a></li>
+                          <li id="u3-atari-3"><a href="pages/u3_atari_3.html">All American Adventures Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari ST</strong>
+                        <ul>
+                          <li id="u3-st-1"><a href="pages/u3_st_1.html">Standard Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">C64</strong>
+                        <ul>
+                          <li id="u3-c64-1"><a href="pages/u3_c64_1.html">1st Edition</a></li>
+                          <li id="u3-c64-2"><a href="pages/u3_c64_2.html">2nd Edition</a></li>
+                          <li id="u3-c64-3"><a href="pages/u3_c64_3.html">3rd Edition</a></li>
+                          <li id="u3-c64atari-1"><a href="pages/u3_c64atari_1.html">C64/Atari Combo Edition</a></li>
+                          <li id="u3-c64-4"><a href="pages/u3_c64_4.html">All American Adventures Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">FM-7/77</strong>
+                        <ul>
+                          <li id="u3-fm7-1"><a href="pages/u3_fm7_1.html">Starcraft Edition 5.25in (JP)</a></li>
+                          <li id="u3-fm77-1"><a href="pages/u3_fm77_1.html">Starcraft Edition 3.5in (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u3-pc-1"><a href="pages/u3_pc_1.html">1st Edition</a></li>
+                          <li id="u3-pc-2"><a href="pages/u3_pc_2.html">2nd Edition</a></li>
+                          <li id="u3-pc-3"><a href="pages/u3_pc_3.html">3rd Edition</a></li>
+                          <li id="u3-pc-4"><a href="pages/u3_pc_4.html">Jing Hsun Edition (TW)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">MSX</strong>
+                        <ul>
+                          <li id="u3-msx-1"><a href="pages/u3_msx_1.html">Ponycanyon Remake (JP)</a></li>
+                          <li id="u3-msx-2"><a href="pages/u3_msx_2.html">Ponycanyon Cartridge Edition (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">NES</strong>
+                        <ul>
+                          <li id="u3-nes-1"><a href="pages/u3_nes_1.html">Standard NES Version</a></li>
+                          <li id="u3-fc-1"><a href="pages/u3_fc_1.html">Famicom version (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-8801</strong>
+                        <ul>
+                          <li id="u3-pc88-1"><a href="pages/u3_pc88_1.html">Starcraft Edition (JP)</a></li>
+                          <li id="u3-pc88-2"><a href="pages/u3_pc88_2.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9801</strong>
+                        <ul>
+                          <li id="u3-pc98-2"><a href="pages/u3_pc98_2.html">Starcraft Edition (JP) 5.25LD</a></li>
+                          <li id="u3-pc98-4"><a href="pages/u3_pc98_4.html">Starcraft Edition (JP) 5.25HD</a></li>
+                          <li id="u3-pc98-1"><a href="pages/u3_pc98_1.html">Ponycanyon Remake 5.25in (JP)</a></li>
+                          <li id="u3-pc98-3"><a href="pages/u3_pc98_3.html">Ponycanyon Remake 3.5in (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">X1</strong>
+                        <ul>
+                          <li id="u3-x1-1"><a href="pages/u3_x1_1.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-iv-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-iv-1">▶</span> Ultima IV
+                  </span>
+                  <div class="category-content" id="cat-ultima-iv-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">Amiga</strong>
+                        <ul>
+                          <li id="u4-amiga-1"><a href="pages/u4_amiga_1.html">Standard Edition</a></li>
+                          <li id="u4-amiga-2"><a href="pages/u4_amiga_2.html">Microprose Edition (EU)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Apple II</strong>
+                        <ul>
+                          <li id="u4-apple-1"><a href="pages/u4_apple_1.html">1st Edition</a></li>
+                          <li id="u4-apple-2"><a href="pages/u4_apple_2.html">2nd Edition</a></li>
+                          <li id="u4-apple-3"><a href="pages/u4_apple_3.html">Korean Edition (Softdisk)</a></li>
+                          <li id="u4-apple-4"><a href="pages/u4_apple_4.html">Korean Edition (TOPIA)</a></li>
+                          <li id="u4-apple-8"><a href="pages/u4_apple_5.html">Jing Hsun Edition (TW)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari 800</strong>
+                        <ul>
+                          <li id="u4-atari-1"><a href="pages/u4_atari_1.html">1st Edition</a></li>
+                          <li id="u4-atari-2"><a href="pages/u4_atari_2.html">2nd Edition</a></li>
+                          <li id="u4-atari-3"><a href="pages/u4_atari_3.html">US Gold Edition (UK)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari ST</strong>
+                        <ul>
+                          <li id="u4-st-1"><a href="pages/u4_st_1.html">Standard Edition</a></li>
+                          <li id="u4-st-2"><a href="pages/u4_st_2.html">Microprose Edition (EU)</a></li>
+                          <li id="u4-st-3"><a href="pages/u4_st_3.html">Microprose Edition (FR)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">C64</strong>
+                        <ul>
+                          <li id="u4-c64-1"><a href="pages/u4_c64_1.html">1st Edition</a></li>
+                          <li id="u4-c64-2"><a href="pages/u4_c64_2.html">2nd Edition</a></li>
+                          <li id="u4-c64-3"><a href="pages/u4_c64_3.html">Microprose Edition (EU)</a></li>
+                          <li id="u4-c64-4"><a href="pages/u4_c64_4.html">US Gold Edition (UK)</a></li>
+                          <li id="u4-c64-5"><a href="pages/u4_c64_5.html">US Gold Edition (DE)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">FM-7/77</strong>
+                        <ul>
+                          <li id="u4-fm7-1"><a href="pages/u4_fm7_1.html">Ponycanyon Remake (JP) 5.25LD</a></li>
+                          <li id="u4-fm7-2"><a href="pages/u4_fm7_2.html">Ponycanyon Remake (JP) 3.5LD</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">FM Towns</strong>
+                        <ul>
+                          <li id="u4-fmtowns-1"><a href="pages/u4_fmtowns_1.html">Fujitsu Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u4-pc-1"><a href="pages/u4_pc_1.html">1st Edition</a></li>
+                          <li id="u4-pc-2"><a href="pages/u4_pc_2.html">1st Edition 3.5in</a></li>
+                          <li id="u4-pc-3"><a href="pages/u4_pc_3.html">2nd Edition</a></li>
+                          <li id="u4-pc-4"><a href="pages/u4_pc_4.html">2nd Edition 3.5in</a></li>
+                          <li id="u4-pc-5"><a href="pages/u4_pc_5.html">Microprose Edition (EU)</a></li>
+                          <li id="u4-pc-6"><a href="pages/u4_pc_6.html">Chinese Edition (TW)</a></li>
+                          <li id="u4-pc-8"><a href="pages/u4_pc_8.html">Jing Hsun Edition (TW)</a></li>
+                          <li id="u4-pc-7"><a href="pages/u4_pc_7.html">Korean Edition (KR)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">MSX</strong>
+                        <ul>
+                          <li id="u4-msx-1"><a href="pages/u4_msx_1.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">NES</strong>
+                        <ul>
+                          <li id="u4-nes-1"><a href="pages/u4_nes_1.html">Standard NES Version</a></li>
+                          <li id="u4-fc-1"><a href="pages/u4_fc_1.html">Famicom Version (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-8801</strong>
+                        <ul>
+                          <li id="u4-pc88-1"><a href="pages/u4_pc88_1.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC9801</strong>
+                        <ul>
+                          <li id="u4-pc98-1"><a href="pages/u4_pc98_1.html">Ponycanyon Remake 5.25HD (JP)</a></li>
+                          <li id="u4-pc98-2"><a href="pages/u4_pc98_2.html">Ponycanyon Remake 3.5HD (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">SMS</strong>
+                        <ul>
+                          <li id="u4-sms-uk"><a href="pages/u4_sms_uk.html">English Edition</a></li>
+                          <li id="u4-sms-de"><a href="pages/u4_sms_de.html">German Edition</a></li>
+                          <li id="u4-sms-fr"><a href="pages/u4_sms_fr.html">French Edition</a></li>
+                          <li id="u4-sms-ca"><a href="pages/u4_sms_ca.html">Canadian Edition</a></li>
+                          <li id="u4-sms-br"><a href="pages/u4_sms_br.html">Brazilian Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">X1</strong>
+                        <ul>
+                          <li id="u4-x1-1"><a href="pages/u4_x1_1.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">X68000</strong>
+                        <ul>
+                          <li id="u4-x68000-1"><a href="pages/u4_x68000_1.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-v-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-v-1">▶</span> Ultima V
+                  </span>
+                  <div class="category-content" id="cat-ultima-v-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">Amiga</strong>
+                        <ul>
+                          <li id="u5-amiga-1"><a href="pages/u5_amiga_1.html">Standard Edition 'C'</a></li>
+                          <li id="u5-amiga-2"><a href="pages/u5_amiga_2.html">Standard Edition 'C' (EU)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Apple II</strong>
+                        <ul>
+                          <li id="u5-apple-1"><a href="pages/u5_apple_1.html">Standard Edition 'A'</a></li>
+                          <li id="u5-apple-2"><a href="pages/u5_apple_2.html">Standard Edition 'B'</a></li>
+                          <li id="u5-apple-3"><a href="pages/u5_apple_3.html">Standard Edition 'C'</a></li>
+                          <li id="u5-apple-4"><a href="pages/u5_apple_4.html">Microprose Edition (EU)</a></li>
+                          <li id="u5-apple-5b"><a href="pages/u5_apple_5a.html">Chinese Edition Pt.1 (TW)</a></li>
+                          <li id="u5-apple-5c"><a href="pages/u5_apple_5b.html">Chinese Edition Pt.2 (TW)</a></li>
+                          <li id="u5-apple-6"><a href="pages/u5_apple_6.html">Jing Hsun Edition (TW)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari ST</strong>
+                        <ul>
+                          <li id="u5-st-1"><a href="pages/u5_st_1.html">Standard Edition 'C'</a></li>
+                          <li id="u5-st-2"><a href="pages/u5_st_2.html">2nd Standard Edition 'C'</a></li>
+                          <li id="u5-st-3"><a href="pages/u5_st_3.html">French Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">C64</strong>
+                        <ul>
+                          <li id="u5-c64-1"><a href="pages/u5_c64_1.html">Standard Edition 'B'</a></li>
+                          <li id="u5-c64-2"><a href="pages/u5_c64_2.html">Standard Edition 'C'</a></li>
+                          <li id="u5-c64-3"><a href="pages/u5_c64_3.html">Standard Edition 'C' (EU)</a></li>
+                          <li id="u5-c64-4"><a href="pages/u5_c64_4.html">Microprose Edition (EU)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">FM Towns</strong>
+                        <ul>
+                          <li id="u5-fmtowns-1"><a href="pages/u5_fmtowns_1.html">Fujitsu Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u5-pc-1"><a href="pages/u5_pc_1.html">Standard Edition 'B' 5.25LD</a></li>
+                          <li id="u5-pc-8"><a href="pages/u5_pc_8.html">Standard Edition 'B' 3.5LD</a></li>
+                          <li id="u5-pc-5"><a href="pages/u5_pc_5.html">Combo Edition 'B' 3.5/5.25LD</a></li>
+                          <li id="u5-pc-2"><a href="pages/u5_pc_2.html">Standard Edition 'C' 5.25LD</a></li>
+                          <li id="u5-pc-6"><a href="pages/u5_pc_6.html">Standard Edition 'C' 3.5LD</a></li>
+                          <li id="u5-pc-3"><a href="pages/u5_pc_3.html">Standard Edition 'C' (EU)</a></li>
+                          <li id="u5-pc-4"><a href="pages/u5_pc_4.html">Microprose Edition 5.25LD (EU)</a></li>
+                          <li id="u5-pc-7"><a href="pages/u5_pc_7.html">Microprose Edition 3.5LD (EU)</a></li>
+                          <li id="u5-pc-9b"><a href="pages/u5_pc_9a.html">Chinese Edition Pt.1 (TW)</a></li>
+                          <li id="u5-pc-9c"><a href="pages/u5_pc_9b.html">Chinese Edition Pt.2 (TW)</a></li>
+                          <li id="u5-pc-10"><a href="pages/u5_pc_10.html">Korean Edition (KR)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">NES</strong>
+                        <ul>
+                          <li id="u5-nes-1"><a href="pages/u5_nes_1.html">Standard NES Version</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9801</strong>
+                        <ul>
+                          <li id="u5-pc98-1"><a href="pages/u5_pc98_1.html">Ponycanyon Remake 5HD (JP)</a></li>
+                          <li id="u5-pc98-2"><a href="pages/u5_pc98_2.html">Ponycanyon Remake 3.5HD (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">X68000</strong>
+                        <ul>
+                          <li id="u5-x68000-1"><a href="pages/u5_x68000_1.html">Ponycanyon Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-vi-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-vi-1">▶</span> Ultima VI
+                  </span>
+                  <div class="category-content" id="cat-ultima-vi-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">Amiga</strong>
+                        <ul>
+                          <li id="u6-amiga-1"><a href="pages/u6_amiga_1.html">Standard Edition (US)</a></li>
+                          <li id="u6-amiga-2"><a href="pages/u6_amiga_2.html">Standard Edition (EU)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Atari ST</strong>
+                        <ul>
+                          <li id="u6-st-1"><a href="pages/u6_st_1.html">Standard Edition (EU)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">C64</strong>
+                        <ul>
+                          <li id="u6-c64-1"><a href="pages/u6_c64_1.html">Standard Edition (US)</a></li>
+                          <li id="u6-c64-2"><a href="pages/u6_c64_2.html">Standard Edition (EU)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">FM Towns</strong>
+                        <ul>
+                          <li id="u6-fmtowns-1"><a href="pages/u6_fmtowns_1.html">Fujitsu Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u6-pc-1"><a href="pages/u6_pc_1.html">Standard Edition 5.25LD(US)</a></li>
+                          <li id="u6-pc-8"><a href="pages/u6_pc_8.html">Standard Edition 3.5LD(US)</a></li>
+                          <li id="u6-pc-2"><a href="pages/u6_pc_2.html">Special Edition (US)</a></li>
+                          <li id="u6-pc-15"><a href="pages/u6_pc_15.html">Standard Edition 5.25LD(EU)</a></li>
+                          <li id="u6-pc-3"><a href="pages/u6_pc_3.html">Standard Edition 3.5LD(EU)</a></li>
+                          <li id="u6-pc-13"><a href="pages/u6_pc_13.html">Standard Ed. Dual Media (EU)</a></li>
+                          <li id="u6-pc-4"><a href="pages/u6_pc_4.html">Special Promotional 5.25HD(US)</a></li>
+                          <li id="u6-pc-9"><a href="pages/u6_pc_9.html">Special Promotional 3.5HD(US)</a></li>
+                          <li id="u6-pc-5"><a href="pages/u6_pc_5.html">Original Uncut 3.5HD(EU)</a></li>
+                          <li id="u6-pc-12"><a href="pages/u6_pc_12.html">Original Uncut 5.25HD(EU)</a></li>
+                          <li id="u6-pc-6"><a href="pages/u6_pc_6.html">Hitsquad Budget Edition (UK)</a></li>
+                          <li id="u6-pc-10"><a href="pages/u6_pc_10.html">Hitsquad Budget Edition (IT)</a></li>
+                          <li id="u6-pc-7"><a href="pages/u6_pc_7.html">GT Interactive Edition</a></li>
+                          <li id="u6-pc-11"><a href="pages/u6_pc_11.html">Chinese Edition (TW)</a></li>
+                          <li id="u6-pc-14"><a href="pages/u6_pc_14.html">Korean Edition (KR)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9801</strong>
+                        <ul>
+                          <li id="u6-pc98-1"><a href="pages/u6_pc98_1.html">Ponycanyon Edition 5HD(JP)</a></li>
+                          <li id="u6-pc98-2"><a href="pages/u6_pc98_2.html">Ponycanyon Edition 3.5HD(JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">SNES</strong>
+                        <ul>
+                          <li id="u6-snes-1"><a href="pages/u6_snes_1.html">Standard SNES Version</a></li>
+                          <li id="u6-sfc-1"><a href="pages/u6_sfc_1.html">SFC Version (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">X68000</strong>
+                        <ul>
+                          <li id="u6-x68000-1"><a href="pages/u6_x68000_1.html">Ponycanyon Edition (JP)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-vii-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-vii-1">▶</span> Ultima VII
+                  </span>
+                  <div class="category-content" id="cat-ultima-vii-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u7-pc-1"><a href="pages/u7_pc_1.html">Standard Ed. 5.25HD (US)</a></li>
+                          <li id="u7-pc-7"><a href="pages/u7_pc_7.html">Standard Ed. 3.5HD (US)</a></li>
+                          <li id="u7-pc-13"><a href="pages/u7_pc_13.html">PC Games Ed. 3.5HD (US)</a></li>
+                          <li id="u7-pc-8"><a href="pages/u7_pc_8.html">Standard Ed. 5.25HD (UK)</a></li>
+                          <li id="u7-pc-2"><a href="pages/u7_pc_2.html">Standard Ed. 3.5HD (UK)</a></li>
+                          <li id="u7-pc-11"><a href="pages/u7_pc_11.html">EA Edition 3.5HD (UK)</a></li>
+                          <li id="u7-pc-5"><a href="pages/u7_pc_5.html">Hitsquad Edition (UK)</a></li>
+                          <li id="u7-pc-10"><a href="pages/u7_pc_10.html">German Ed. 5.25HD (DE)</a></li>
+                          <li id="u7-pc-3"><a href="pages/u7_pc_3.html">German Ed. 3.5HD (DE)</a></li>
+                          <li id="u7-pc-12"><a href="pages/u7_pc_12.html">EA Edition 3.5HD (DE)</a></li>
+                          <li id="u7-pc-6"><a href="pages/u7_pc_6.html">Softprice Edition (DE)</a></li>
+                          <li id="u7-pc-4"><a href="pages/u7_pc_4.html">French Edition 3.5HD (FR)</a></li>
+                          <li id="u7-pc-15"><a href="pages/u7_pc_15.html">Polish Edition 5.25HD (PL)</a></li>
+                          <li id="u7-pc-17"><a href="pages/u7_pc_17.html">Spanish Edition 3.5HD (ES)</a></li>
+                          <li id="u7-pc-9"><a href="pages/u7_pc_9.html">Chinese Edition (TW)</a></li>
+                          <li id="u7-pc-16"><a href="pages/u7_pc_16.html">Korean Edition (KR)</a></li>
+                          <li id="u7-pc-14"><a href="pages/u7_pc_14.html">Spanish CD-ROM Classics (ES)</a></li>
+                          <li id="u7-fov-1"><a href="pages/u7_fov_1.html">Forge of Virtue 3.5HD (US)</a></li>
+                          <li id="u7-fov-2"><a href="pages/u7_fov_2.html">Forge of Virtue 5.25HD (US)</a></li>
+                          <li id="u7-fov-3"><a href="pages/u7_fov_3.html">Forge of Virtue 3.5HD (EU)</a></li>
+                          <li id="u7-fov-4"><a href="pages/u7_fov_4.html">Forge of Virtue 5.25HD (EU)</a></li>
+                          <li id="u7-fov-5"><a href="pages/u7_fov_5.html">Forge of Virtue EA - 3.5HD (EU)</a></li>
+                          <li id="u7-fov-6"><a href="pages/u7_fov_6.html">Forge of Virtue Chinese (TW)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">SNES</strong>
+                        <ul>
+                          <li id="u7-snes-1"><a href="pages/u7_snes_1.html">Standard SNES Version</a></li>
+                          <li id="u7-sfc-1"><a href="pages/u7_sfc_1.html">SFC Version (JP)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-vii-part-2-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-vii-part-2-1">▶</span> Ultima VII Part 2
+                  </span>
+                  <div class="category-content" id="cat-ultima-vii-part-2-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u72-us-1"><a href="pages/u72_us_1.html">Standard Edition (US)</a></li>
+                          <li id="u72-uk-1"><a href="pages/u72_uk_1.html">EU Standard Edition (UK)</a></li>
+                          <li id="u72-de-1"><a href="pages/u72_de_1.html">EU Standard Edition (DE)</a></li>
+                          <li id="u72-es-1"><a href="pages/u72_es_1.html">Spanish Edition (ES)</a></li>
+                          <li id="u72-cn-1"><a href="pages/u72_cn_1.html">Chinese Edition (TW)</a></li>
+                          <li id="u72-kr-1"><a href="pages/u72_kr_1.html">Korean Edition (KR)</a></li>
+                          <li id="u72-kr-2"><a href="pages/u72_kr_2.html">Korean CD-ROM Edition (KR)</a></li>
+                          <li id="u72-es-2"><a href="pages/u72_es_2.html">Spanish CD-ROM Classics (ES)</a></li>
+                          <li id="u72-ss-1"><a href="pages/u72_ss_1.html">Silver Seed Add-On (US)</a></li>
+                          <li id="u72-ss-2"><a href="pages/u72_ss_2.html">Silver Seed Add-On (EU)</a></li>
+                          <li id="u72-ss-3"><a href="pages/u72_ss_3.html">Silver Seed Add-On (TW)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-viii-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-viii-1">▶</span> Ultima VIII
+                  </span>
+                  <div class="category-content" id="cat-ultima-viii-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u8-us-1"><a href="pages/u8_us_1.html">Disk Edition (US)</a></li>
+                          <li id="u8-us-2"><a href="pages/u8_us_2.html">CD-HD Edition (US)</a></li>
+                          <li id="u8-us-sp"><a href="pages/u8_us_sp.html">Speech Pack (US)</a></li>
+                          <li id="u8-uk-1"><a href="pages/u8_uk_1.html">Disk Edition (UK)</a></li>
+                          <li id="u8-uk-2"><a href="pages/u8_uk_2.html">CD-HD Edition (UK)</a></li>
+                          <li id="u8-uk-sp"><a href="pages/u8_uk_sp.html">Speech Pack (UK)</a></li>
+                          <li id="u8-de-1"><a href="pages/u8_de_1.html">Disk Edition (DE)</a></li>
+                          <li id="u8-de-2"><a href="pages/u8_de_2.html">CD-HD Edition (DE)</a></li>
+                          <li id="u8-de-sp"><a href="pages/u8_de_sp.html">Speech Pack (DE)</a></li>
+                          <li id="u8-fr-1"><a href="pages/u8_fr_1.html">Disk Edition (FR)</a></li>
+                          <li id="u8-fr-2"><a href="pages/u8_fr_2.html">CD-HD Edition (FR)</a></li>
+                          <li id="u8-fr-sp"><a href="pages/u8_fr_sp.html">Speech Pack (FR)</a></li>
+                          <li id="u8-it-1"><a href="pages/u8_it_1.html">Disk Edition (IT)</a></li>
+                          <li id="u8-it-2"><a href="pages/u8_it_2.html">CD-HD Edition (IT)</a></li>
+                          <li id="u8-es-1"><a href="pages/u8_es_1.html">Disk Edition (ES)</a></li>
+                          <li id="u8-jp-1"><a href="pages/u8_jp_1.html">DOS/V CD Edition (JP)</a></li>
+                          <li id="u8-cn-1"><a href="pages/u8_cn_1.html">Chinese Edition (TW)</a></li>
+                          <li id="u8-kr-1"><a href="pages/u8_kr_1.html">Korean Edition (KR)</a></li>
+                          <li id="u8-us-3"><a href="pages/u8_us_3.html">Publishers Choice Edition (US)</a></li>
+                          <li id="u8-cl-1"><a href="pages/u8_cl_1.html">EA Classics Gold</a></li>
+                          <li id="u8-cl-2"><a href="pages/u8_cl_2.html">EA Classics Gold Big Box</a></li>
+                          <li id="u8-cl-3"><a href="pages/u8_cl_3.html">EA Classics (EU/DE)</a></li>
+                          <li id="u8-cl-4"><a href="pages/u8_cl_4.html">EA Classics (EU/UK)</a></li>
+                          <li id="u8-cl-5"><a href="pages/u8_cl_5.html">EA Classics (EU/FR)</a></li>
+                          <li id="u8-aus-1"><a href="pages/u8_aus_1.html">Manaccom Edition (AU)</a></li>
+                          <li id="u8-aus-2"><a href="pages/u8_aus_2.html">CD Classix (AU)</a></li>
+                          <li id="u8-aus-3"><a href="pages/u8_aus_3.html">CD Classix II (AU)</a></li>
+                          <li id="u8-pl-1"><a href="pages/u8_pl_1.html">Zielona Seria Classics (PL)</a></li>
+                          <li id="u8-it-3"><a href="pages/u8_it_3.html">Collezione Cd-Rom (IT)</a></li>
+                          <li id="u8-aus-4"><a href="pages/u8_aus_4.html">Best Sellers Edition (SG)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9821</strong>
+                        <ul>
+                          <li id="u8-pc98-1"><a href="pages/u8_pc98_1.html">Disk Edition (JP)</a></li>
+                          <li id="u8-pc98-2"><a href="pages/u8_pc98_2.html">CD-HD Edition (JP)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-ix-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-ix-1">▶</span> Ultima IX
+                  </span>
+                  <div class="category-content" id="cat-ultima-ix-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="u9-us-1"><a href="pages/u9_us_1.html">Standard Edition (US)</a></li>
+                          <li id="u9-us-2"><a href="pages/u9_us_2.html">Dragon Edition (US)</a></li>
+                          <li id="u9-uk-1"><a href="pages/u9_uk_1.html">EU Standard Edition (UK)</a></li>
+                          <li id="u9-de-1"><a href="pages/u9_de_1.html">EU Standard Edition (DE)</a></li>
+                          <li id="u9-fr-1"><a href="pages/u9_fr_1.html">EU Standard Edition (FR)</a></li>
+                          <li id="u9-it-1"><a href="pages/u9_it_1.html">EU Standard Edition (IT)</a></li>
+                          <li id="u9-nl-1"><a href="pages/u9_nl_1.html">EU Standard Edition (NL/GR)</a></li>
+                          <li id="u9-es-1"><a href="pages/u9_es_1.html">Spanish Edition (ES)</a></li>
+                          <li id="u9-pt-2"><a href="pages/u9_pt_2.html">Portuguese Edition (PT)</a></li>
+                          <li id="u9-pl-1"><a href="pages/u9_pl_1.html">Polish Edition (PL)</a></li>
+                          <li id="u9-pl-2"><a href="pages/u9_pl_2.html">Polish EA Classics (PL)</a></li>
+                          <li id="u9-aus-1"><a href="pages/u9_aus_1.html">Australia Edition (AU)</a></li>
+                          <li id="u9-as-1"><a href="pages/u9_as_1.html">Asia-Pacific Dragon Edition</a></li>
+                          <li id="u9-jp-1"><a href="pages/u9_jp_1.html">Jap. Standard Edition (JP)</a></li>
+                          <li id="u9-jp-2"><a href="pages/u9_jp_2.html">Premium Edition (JP)</a></li>
+                          <li id="u9-jp-3"><a href="pages/u9_jp_3.html">EA Best Selections (JP)</a></li>
+                          <li id="u9-jp-4"><a href="pages/u9_jp_4.html">EA Best Selections II (JP)</a></li>
+                          <li id="u9-ru-1"><a href="pages/u9_ru_1.html">Russian Edition (RU)</a></li>
+                          <li id="u9-th-1"><a href="pages/u9_th_1.html">Thai Edition (TH)</a></li>
+                          <li id="u9-br-1"><a href="pages/u9_br_1.html">Brazil Edition (BR)</a></li>
+                          <li id="u9-cn-1"><a href="pages/u9_cn_1.html">Chinese Edition (TW)</a></li>
+                          <li id="u9-kr-1"><a href="pages/u9_kr_1.html">Korean Edition (KR)</a></li>
+                          <li id="u9-za-1"><a href="pages/u9_za_1.html">South African Edition (ZA)</a></li>
+                          <li id="u9-pt-1"><a href="pages/u9_pt_1.html">Portuguese Budget Edition (PT)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Ultima Underworld Series -->
+          <li>
+            <span class="category-toggle level-0" onclick="toggleCategory('cat-ultima-underworld-series-0')">
+              <span class="toggle-icon" id="icon-cat-ultima-underworld-series-0">▶</span> Ultima Underworld Series
+            </span>
+            <div class="category-content" id="cat-ultima-underworld-series-0" style="display: none;">
+              <ul>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-underworld-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-underworld-1">▶</span> Ultima Underworld
+                  </span>
+                  <div class="category-content" id="cat-ultima-underworld-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">FM Towns</strong>
+                        <ul>
+                          <li id="uw1-fmtowns-1"><a href="pages/uw1_fmtowns_1.html">Japanese Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="uw1-pc-1"><a href="pages/uw1_pc_1.html">Standard Edition 3.5HD (US)</a></li>
+                          <li id="uw1-pc-6"><a href="pages/uw1_pc_6.html">Standard Edition 5.25HD (US)</a></li>
+                          <li id="uw1-pc-2"><a href="pages/uw1_pc_2.html">Standard Edition 3.5HD (EU)</a></li>
+                          <li id="uw1-pc-7"><a href="pages/uw1_pc_7.html">Standard Edition 5.25HD (EU)</a></li>
+                          <li id="uw1-pc-3"><a href="pages/uw1_pc_3.html">Special Promotional Release</a></li>
+                          <li id="uw1-pc-4"><a href="pages/uw1_pc_4.html">Hitsquad Edition (UK)</a></li>
+                          <li id="uw1-pc-5"><a href="pages/uw1_pc_5.html">EA Edition 3.5HD (EU)</a></li>
+                          <li id="uw1-pc-8"><a href="pages/uw1_pc_8.html">Chinese Edition (TW)</a></li>
+                          <li id="uw1-pc-11"><a href="pages/uw1_pc_11.html">Korean Edition (KR)</a></li>
+                          <li id="uw1-pc-9"><a href="pages/uw1_pc_9.html">Polish Edition 3.5HD (PL)</a></li>
+                          <li id="uw1-pc-10"><a href="pages/uw1_pc_10.html">Polish Edition 5.25HD (PL)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9801</strong>
+                        <ul>
+                          <li id="uw1-pc98-1"><a href="pages/uw1_pc98_1.html">Disk Ed. 3.5HD 256 Color (JP)</a></li>
+                          <li id="uw1-pc98-2"><a href="pages/uw1_pc98_2.html">Disk Ed. 5HD 256 Color (JP)</a></li>
+                          <li id="uw1-pc98-3"><a href="pages/uw1_pc98_3.html">Disk Ed. 3.5HD 16 Color (JP)</a></li>
+                          <li id="uw1-pc98-4"><a href="pages/uw1_pc98_4.html">Disk Ed. 5HD 16 Color (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Playstation</strong>
+                        <ul>
+                          <li id="uw1-psx-1"><a href="pages/uw1_psx_1.html">Playstation Remake (JP)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">Pocket PC</strong>
+                        <ul>
+                          <li id="uw1-ppc-1"><a href="pages/uw1_ppc_1.html">Pocket PC Edition (US)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-underworld-ii-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-underworld-ii-1">▶</span> Ultima Underworld II
+                  </span>
+                  <div class="category-content" id="cat-ultima-underworld-ii-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">FM Towns</strong>
+                        <ul>
+                          <li id="uw2-fmtowns-1"><a href="pages/uw2_fmtowns_1.html">Japanese Edition</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="uw2-pc-1"><a href="pages/uw2_pc_1.html">Standard Edition (US)</a></li>
+                          <li id="uw2-pc-2"><a href="pages/uw2_pc_2.html">EU Edition 3.5HD (UK)</a></li>
+                          <li id="uw2-pc-3"><a href="pages/uw2_pc_3.html">EU Edition 3.5HD (DE)</a></li>
+                          <li id="uw2-pc-4"><a href="pages/uw2_pc_4.html">EU Edition 3.5HD (FR)</a></li>
+                          <li id="uw2-pc-5"><a href="pages/uw2_pc_5.html">EU Edition 5.25HD (UK)</a></li>
+                          <li id="uw2-pc-6"><a href="pages/uw2_pc_6.html">Polish Edition (PL)</a></li>
+                          <li id="uw2-pc-7"><a href="pages/uw2_pc_7.html">Korean Edition (KR)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9801</strong>
+                        <ul>
+                          <li id="uw2-pc98-1"><a href="pages/uw2_pc98_1.html">Disk Edition 5HD (JP)</a></li>
+                          <li id="uw2-pc98-2"><a href="pages/uw2_pc98_2.html">Disk Edition 3.5HD (JP)</a></li>
+                          <li id="uw2-pc98-3"><a href="pages/uw2_pc98_3.html">CD Edition (JP)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Worlds of Ultima Series -->
+          <li>
+            <span class="category-toggle level-0" onclick="toggleCategory('cat-worlds-of-ultima-series-0')">
+              <span class="toggle-icon" id="icon-cat-worlds-of-ultima-series-0">▶</span> Worlds of Ultima Series
+            </span>
+            <div class="category-content" id="cat-worlds-of-ultima-series-0" style="display: none;">
+              <ul>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-savage-empire-1')">
+                    <span class="toggle-icon" id="icon-cat-savage-empire-1">▶</span> Savage Empire
+                  </span>
+                  <div class="category-content" id="cat-savage-empire-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="wou1-pc-1"><a href="pages/wou1_pc_1.html">Standard Edition 5.25HD (US)</a></li>
+                          <li id="wou1-pc-4"><a href="pages/wou1_pc_4.html">Standard Edition 3.5LD (US)</a></li>
+                          <li id="wou1-pc-2"><a href="pages/wou1_pc_2.html">Standard Edition 5.25LD (EU)</a></li>
+                          <li id="wou1-pc-5"><a href="pages/wou1_pc_5.html">Standard Edition 5.25HD (EU)</a></li>
+                          <li id="wou1-pc-6"><a href="pages/wou1_pc_6.html">Standard Edition 3.5LD (EU)</a></li>
+                          <li id="wou1-pc-3"><a href="pages/wou1_pc_3.html">Special Edition 5.25HD (US)</a></li>
+                          <li id="wou1-pc-7"><a href="pages/wou1_pc_7.html">Chinese Edition (TW)</a></li>
+                          <li id="wou1-pc-8"><a href="pages/wou1_pc_8.html">Korean Edition (KR)</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">PC-9801</strong>
+                        <ul>
+                          <li id="wou1-pc98-1"><a href="pages/wou1_pc98_1.html">Japanese Edition 5.25HD</a></li>
+                          <li id="wou1-pc98-2"><a href="pages/wou1_pc98_2.html">Japanese Edition 3.5HD</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">SFC</strong>
+                        <ul>
+                          <li id="wou1-sfc-1"><a href="pages/wou1_sfc_1.html">Japanese SFC Version</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">X68000</strong>
+                        <ul>
+                          <li id="wou1-x68000-1"><a href="pages/wou1_x68000_1.html">Japanese Edition</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-martian-dreams-1')">
+                    <span class="toggle-icon" id="icon-cat-martian-dreams-1">▶</span> Martian Dreams
+                  </span>
+                  <div class="category-content" id="cat-martian-dreams-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">IBM PC</strong>
+                        <ul>
+                          <li id="wou2-pc-1"><a href="pages/wou2_pc_1.html">Standard Edition 5.25HD (US)</a></li>
+                          <li id="wou2-pc-4"><a href="pages/wou2_pc_4.html">Standard Edition 3.5HD (US)</a></li>
+                          <li id="wou2-pc-2"><a href="pages/wou2_pc_2.html">Standard Edition 5.25HD (EU)</a></li>
+                          <li id="wou2-pc-5"><a href="pages/wou2_pc_5.html">Standard Edition 3.5HD (EU)</a></li>
+                          <li id="wou2-pc-6"><a href="pages/wou2_pc_6.html">Standard Edition 3.5LD (EU)</a></li>
+                          <li id="wou2-pc-3"><a href="pages/wou2_pc_3.html">GT Interactive Edition</a></li>
+                          <li id="wou2-pc-7"><a href="pages/wou2_pc_7.html">Chinese Edition (TW)</a></li>
+                          <li id="wou2-pc-8"><a href="pages/wou2_pc_8.html">Korean Edition (KR)</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Runes of Virtue Series -->
+          <li>
+            <span class="category-toggle level-0" onclick="toggleCategory('cat-runes-of-virtue-series-0')">
+              <span class="toggle-icon" id="icon-cat-runes-of-virtue-series-0">▶</span> Runes of Virtue Series
+            </span>
+            <div class="category-content" id="cat-runes-of-virtue-series-0" style="display: none;">
+              <ul>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-runes-of-virtue-1')">
+                    <span class="toggle-icon" id="icon-cat-runes-of-virtue-1">▶</span> Runes of Virtue
+                  </span>
+                  <div class="category-content" id="cat-runes-of-virtue-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">Gameboy</strong>
+                        <ul>
+                          <li id="rov1-gb-1"><a href="pages/rov1_gb_1.html">Standard Version</a></li>
+                          <li id="rov1-gb-2"><a href="pages/rov1_gb_2.html">Japanese Version</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-runes-of-virtue-ii-1')">
+                    <span class="toggle-icon" id="icon-cat-runes-of-virtue-ii-1">▶</span> Runes of Virtue II
+                  </span>
+                  <div class="category-content" id="cat-runes-of-virtue-ii-1" style="display: none;">
+                    <ul>
+                      <li>
+                        <strong class="level-2">Gameboy</strong>
+                        <ul>
+                          <li id="rov2-gb-1"><a href="pages/rov2_gb_1.html">Standard Version</a></li>
+                          <li id="rov2-gb-2"><a href="pages/rov2_gb_2.html">Japanese Version</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <strong class="level-2">SNES</strong>
+                        <ul>
+                          <li id="rov2-snes-1"><a href="pages/rov2_snes_1.html">Standard SNES Version</a></li>
+                          <li id="rov2-sfc-1"><a href="pages/rov2_sfc_1.html">Japanese SFC Version</a></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Ultima Online Series -->
+          <li>
+            <span class="category-toggle level-0" onclick="toggleCategory('cat-ultima-online-0')">
+              <span class="toggle-icon" id="icon-cat-ultima-online-0">▶</span> Ultima Online
+            </span>
+            <div class="category-content" id="cat-ultima-online-0" style="display: none;">
+              <ul>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-online-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-online-1">▶</span> Ultima Online
+                  </span>
+                  <div class="category-content" id="cat-ultima-online-1" style="display: none;">
+                    <ul>
+                      <li id="uo-or-us-1"><a href="pages/uo_or_us_1.html">Regular Edition</a></li>
+                      <li id="uo-or-us-2"><a href="pages/uo_or_us_2.html">Charter Edition</a></li>
+                      <li id="uo-or-jp-1"><a href="pages/uo_or_jp_1.html">Japanese Edition</a></li>
+                      <li id="uo-or-jp-2"><a href="pages/uo_or_jp_2.html">Japanese Budget Edition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-the-second-age-1')">
+                    <span class="toggle-icon" id="icon-cat-the-second-age-1">▶</span> The Second Age
+                  </span>
+                  <div class="category-content" id="cat-the-second-age-1" style="display: none;">
+                    <ul>
+                      <li id="uo-t2a-us-1"><a href="pages/uo_t2a_us_1.html">Standard Edition (US)</a></li>
+                      <li id="uo-t2a-us-2"><a href="pages/uo_t2a_us_2.html">Second Edition (US)</a></li>
+                      <li id="uo-t2a-us-3"><a href="pages/uo_t2a_us_3.html">Upgrade Edition (US)</a></li>
+                      <li id="uo-t2a-uk-1"><a href="pages/uo_t2a_uk_1.html">EU Edition (UK)</a></li>
+                      <li id="uo-t2a-de-1"><a href="pages/uo_t2a_de_1.html">EU Edition (DE)</a></li>
+                      <li id="uo-t2a-jp-5"><a href="pages/uo_t2a_jp_5.html">1st Japanese Edition</a></li>
+                      <li id="uo-t2a-jp-1"><a href="pages/uo_t2a_jp_1.html">Japanese Upgrade Edition</a></li>
+                      <li id="uo-t2a-jp-2"><a href="pages/uo_t2a_jp_2.html">2nd Japanese Edition</a></li>
+                      <li id="uo-t2a-jp-3"><a href="pages/uo_t2a_jp_3.html">3rd Japanese Edition</a></li>
+                      <li id="uo-t2a-jp-4"><a href="pages/uo_t2a_jp_4.html">Convenience Store Edition (JP)</a></li>
+                      <li id="uo-t2a-cn-1"><a href="pages/uo_t2a_cn_1.html">Chinese Edition (TW)</a></li>
+                      <li id="uo-t2a-kr-1"><a href="pages/uo_t2a_kr_1.html">Korean Edition (KR)</a></li>
+                      <li id="uo-t2a-kr-2"><a href="pages/uo_t2a_kr_2.html">2nd Korean Edition (KR)</a></li>
+                      <li id="uo-t2a-aus-1"><a href="pages/uo_t2a_aus_1.html">Discovery Edition (AU)</a></li>
+                      <li id="uo-t2a-ru-1"><a href="pages/uo_t2a_ru_1.html">Russian Edition (RU)</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-renaissance-1')">
+                    <span class="toggle-icon" id="icon-cat-renaissance-1">▶</span> Renaissance
+                  </span>
+                  <div class="category-content" id="cat-renaissance-1" style="display: none;">
+                    <ul>
+                      <li id="uo-ren-us-1"><a href="pages/uo_ren_us_1.html">Standard Edition (US)</a></li>
+                      <li id="uo-ren-uk-1"><a href="pages/uo_ren_uk_1.html">EU Edition (UK)</a></li>
+                      <li id="uo-ren-de-1"><a href="pages/uo_ren_de_1.html">EU Edition (DE)</a></li>
+                      <li id="uo-ren-fr-1"><a href="pages/uo_ren_fr_1.html">EU Edition (FR)</a></li>
+                      <li id="uo-ren-jp-1"><a href="pages/uo_ren_jp_1.html">Japanese Edition (JP)</a></li>
+                      <li id="uo-ne-jp-1"><a href="pages/uo_ne_jp_1.html">New Ultima Online (JP)</a></li>
+                      <li id="uo-ne-jp-2"><a href="pages/uo_ne_jp_2.html">New Ultima Online - XP (JP)</a></li>
+                      <li id="uo-ren-cn-1"><a href="pages/uo_ren_cn_1.html">Chinese Edition (TW)</a></li>
+                      <li id="uo-ren-us-2"><a href="pages/uo_ren_us_2.html">EA Classics Edition (US)</a></li>
+                      <li id="uo-ren-ru-1"><a href="pages/uo_ren_ru_1.html">Russian Edition (RU)</a></li>
+                      <li id="uo-ren-aus-1"><a href="pages/uo_ren_aus_1.html">Asia Pacific Edition (AUS)</a></li>
+                      <li id="uo-ren-kr-1"><a href="pages/uo_ren_kr_1.html">Korean Edition (KR)</a></li>
+                      <li id="uo-ren-kr-2"><a href="pages/uo_ren_kr_2.html">PC Power Zine Edition (KR)</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-third-dawn-1')">
+                    <span class="toggle-icon" id="icon-cat-third-dawn-1">▶</span> Third Dawn
+                  </span>
+                  <div class="category-content" id="cat-third-dawn-1" style="display: none;">
+                    <ul>
+                      <li id="uo-td-us-1"><a href="pages/uo_td_us_1.html">US Edition</a></li>
+                      <li id="uo-td-us-2"><a href="pages/uo_td_us_2.html">US Upgrade Edition</a></li>
+                      <li id="uo-td-uk-1"><a href="pages/uo_td_uk_1.html">EU Edition (UK)</a></li>
+                      <li id="uo-td-de-1"><a href="pages/uo_td_de_1.html">EU Edition (German)</a></li>
+                      <li id="uo-td-fr-1"><a href="pages/uo_td_fr_1.html">EU Edition (French)</a></li>
+                      <li id="uo-td-it-1"><a href="pages/uo_td_it_1.html">EU Edition (Italian)</a></li>
+                      <li id="uo-td-es-1"><a href="pages/uo_td_es_1.html">EU Edition (Spanish)</a></li>
+                      <li id="uo-td-pl-1"><a href="pages/uo_td_pl_1.html">PL Poland Edition</a></li>
+                      <li id="uo-td-ru-1"><a href="pages/uo_td_ru_1.html">RU Russian Edition</a></li>
+                      <li id="uo-td-jp-1"><a href="pages/uo_td_jp_1.html">JP New Player Edition</a></li>
+                      <li id="uo-td-jp-2"><a href="pages/uo_td_jp_2.html">JP Upgrade Edition</a></li>
+                      <li id="uo-td-jp-3"><a href="pages/uo_td_jp_3.html">JP Convenience Store Edition</a></li>
+                      <li id="uo-td-cn-1"><a href="pages/uo_td_cn_1.html">TW Chinese Edition</a></li>
+                      <li id="uo-td-cn-2"><a href="pages/uo_td_cn_2.html">TW Chinese Limited Edition</a></li>
+                      <li id="uo-td-kr-1"><a href="pages/uo_td_kr_1.html">KR Korean Edition</a></li>
+                      <li id="uo-td-kr-2"><a href="pages/uo_td_kr_2.html">KR JuJu Club Edition</a></li>
+                      <li id="uo-td-aus-1"><a href="pages/uo_td_aus_1.html">AU Asia Pacific Edition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-lord-blackthorns-revenge-1')">
+                    <span class="toggle-icon" id="icon-cat-lord-blackthorns-revenge-1">▶</span> Lord Blackthorn's
+                    Revenge
+                  </span>
+                  <div class="category-content" id="cat-lord-blackthorns-revenge-1" style="display: none;">
+                    <ul>
+                      <li id="uo-lbr-us-1"><a href="pages/uo_lbr_us_1.html">US Limited Edition</a></li>
+                      <li id="uo-lbr-us-2"><a href="pages/uo_lbr_us_2.html">US Standard Edition</a></li>
+                      <li id="uo-lbr-uk-1"><a href="pages/uo_lbr_uk_1.html">EU Edition (UK)</a></li>
+                      <li id="uo-lbr-de-1"><a href="pages/uo_lbr_de_1.html">EU Edition (German)</a></li>
+                      <li id="uo-lbr-fr-1"><a href="pages/uo_lbr_fr_1.html">EU Edition (French)</a></li>
+                      <li id="uo-lbr-es-1"><a href="pages/uo_lbr_es_1.html">EU Edition (Spanish)</a></li>
+                      <li id="uo-lbr-jp-1"><a href="pages/uo_lbr_jp_1.html">JP New Player Edition</a></li>
+                      <li id="uo-lbr-jp-2"><a href="pages/uo_lbr_jp_2.html">JP Upgrade Edition</a></li>
+                      <li id="uo-lbr-jp-3"><a href="pages/uo_lbr_jp_3.html">JP Convenience Store Edition</a></li>
+                      <li id="uo-5th-jp-1"><a href="pages/uo_5th_jp_1.html">JP 5th Ann. Edition - Soldiers</a></li>
+                      <li id="uo-5th-jp-2"><a href="pages/uo_5th_jp_2.html">JP 5th Ann. Edition - Mages</a></li>
+                      <li id="uo-5th-jp-3"><a href="pages/uo_5th_jp_3.html">JP 5th Ann. Edition - Smiths</a></li>
+                      <li id="uo-5th-jp-4"><a href="pages/uo_5th_jp_4.html">JP 5th Ann. - Amazon Edition</a></li>
+                      <li id="uo-lbr-cn-1"><a href="pages/uo_lbr_cn_1.html">Chinese Edition</a></li>
+                      <li id="uo-lbr-kr-1"><a href="pages/uo_lbr_kr_1.html">Korean Edition</a></li>
+                      <li id="uo-lbr-kr-2"><a href="pages/uo_lbr_kr_2.html">Korean Special Edition</a></li>
+                      <li id="uo-lbr-aus-1"><a href="pages/uo_lbr_aus_1.html">Asia Pacific Edition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-age-of-shadows-1')">
+                    <span class="toggle-icon" id="icon-cat-age-of-shadows-1">▶</span> Age of Shadows
+                  </span>
+                  <div class="category-content" id="cat-age-of-shadows-1" style="display: none;">
+                    <ul>
+                      <li id="uo-aos-us-1"><a href="pages/uo_aos_us_1.html">US Edition</a></li>
+                      <li id="uo-aos-uk-1"><a href="pages/uo_aos_uk_1.html">EU Edition (UK)</a></li>
+                      <li id="uo-aos-de-1"><a href="pages/uo_aos_de_1.html">EU Edition (German)</a></li>
+                      <li id="uo-aos-fr-1"><a href="pages/uo_aos_fr_1.html">EU Edition (French)</a></li>
+                      <li id="uo-aos-es-1"><a href="pages/uo_aos_es_1.html">EU Edition (Spanish)</a></li>
+                      <li id="uo-aos-pl-1"><a href="pages/uo_aos_pl_1.html">EU Edition (Polish)</a></li>
+                      <li id="uo-aos-jp-1"><a href="pages/uo_aos_jp_1.html">JP New Player Edition</a></li>
+                      <li id="uo-aos-jp-2"><a href="pages/uo_aos_jp_2.html">JP Upgrade Edition</a></li>
+                      <li id="uo-aos-jp-3"><a href="pages/uo_aos_jp_3.html">JP Convenience Store Edition</a></li>
+                      <li id="uo-ne-jp-3"><a href="pages/uo_ne_jp_3.html">JP New Ultima Online 2003 Edition</a></li>
+                      <li id="uo-ne-jp-4"><a href="pages/uo_ne_jp_4.html">JP New Ultima Online 2004 Edition</a></li>
+                      <li id="uo-ne-jp-5"><a href="pages/uo_ne_jp_5.html">JP Ultima Online (Limited)</a></li>
+                      <li id="uo-ne-jp-6"><a href="pages/uo_ne_jp_6.html">JP Ultima Online</a></li>
+                      <li id="uo-ne-jp-7"><a href="pages/uo_ne_jp_7.html">JP Ultima Online (SE Campaign Ed.)</a></li>
+                      <li id="uo-aos-cn-1"><a href="pages/uo_aos_cn_1.html">Chinese Edition</a></li>
+                      <li id="uo-aos-kr-1"><a href="pages/uo_aos_kr_1.html">Korean Edition</a></li>
+                      <li id="uo-aos-aus-1"><a href="pages/uo_aos_aus_1.html">Asia Pacific Edition</a></li>
+                      <li id="uo-7th-us-1"><a href="pages/uo_7th_us_1.html">7th Anniversary Edition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-samurai-empire-1')">
+                    <span class="toggle-icon" id="icon-cat-samurai-empire-1">▶</span> Samurai Empire
+                  </span>
+                  <div class="category-content" id="cat-samurai-empire-1" style="display: none;">
+                    <ul>
+                      <li id="uo-se-us-1"><a href="pages/uo_se_us_1.html">US Edition</a></li>
+                      <li id="uo-se-uk-1"><a href="pages/uo_se_uk_1.html">EU Edition (UK)</a></li>
+                      <li id="uo-se-de-1"><a href="pages/uo_se_de_1.html">EU Edition (DE)</a></li>
+                      <li id="uo-se-jp-1"><a href="pages/uo_se_jp_1.html">JP New Player Edition</a></li>
+                      <li id="uo-se-jp-2"><a href="pages/uo_se_jp_2.html">JP Upgrade Edition</a></li>
+                      <li id="uo-se-jp-3"><a href="pages/uo_se_jp_3.html">JP Convenience Store Edition</a></li>
+                      <li id="uo-gd-us-1"><a href="pages/uo_gd_us_1.html">US Ultima Online Gold</a></li>
+                      <li id="uo-8th-us-1"><a href="pages/uo_8th_us_1.html">US The Eighth Age</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-mondains-legacy-1')">
+                    <span class="toggle-icon" id="icon-cat-mondains-legacy-1">▶</span> Mondain's Legacy
+                  </span>
+                  <div class="category-content" id="cat-mondains-legacy-1" style="display: none;">
+                    <ul>
+                      <li id="uo-ml-us-1"><a href="pages/uo_ml_us_1.html">Backup CD Set</a></li>
+                      <li id="uo-ml-jp-1"><a href="pages/uo_ml_jp_1.html">JP New Player Edition</a></li>
+                      <li id="uo-ml-jp-2"><a href="pages/uo_ml_jp_2.html">JP Upgrade Edition</a></li>
+                      <li id="uo-ml-jp-3"><a href="pages/uo_ml_jp_3.html">JP New UO (HajiUO) Edition</a></li>
+                      <li id="uo-ml-jp-4"><a href="pages/uo_ml_jp_4.html">JP Ultima Online 2006 Edition</a></li>
+                      <li id="uo-ml-cn-1"><a href="pages/uo_ml_cn_1.html">CN Starter Pack</a></li>
+                      <li id="uo-9th-us-1"><a href="pages/uo_9th_us_1.html">US 9th Anniversary Collection</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-kingdom-reborn-1')">
+                    <span class="toggle-icon" id="icon-cat-kingdom-reborn-1">▶</span> Kingdom Reborn
+                  </span>
+                  <div class="category-content" id="cat-kingdom-reborn-1" style="display: none;">
+                    <ul>
+                      <li id="uo-kr-us-1"><a href="pages/uo_kr_us_1.html">Backup DVD-ROM</a></li>
+                      <li id="uo-kr-jp-1"><a href="pages/uo_kr_jp_1.html">JP 7 Day Trial DVD</a></li>
+                      <li id="uo-kr-jp-2"><a href="pages/uo_kr_jp_2.html">JP Gametime 45 DVD Starter Kit</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Compilation Series -->
+          <li>
+            <span class="category-toggle level-0" onclick="toggleCategory('cat-compilations-0')">
+              <span class="toggle-icon" id="icon-cat-compilations-0">▶</span> Compilations
+            </span>
+            <div class="category-content" id="cat-compilations-0" style="display: none;">
+              <ul>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-trilogy-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-trilogy-1">▶</span> Ultima Trilogy I II III
+                  </span>
+                  <div class="category-content" id="cat-ultima-trilogy-1" style="display: none;">
+                    <ul>
+                      <li id="u13-apple-1"><a href="pages/u13_apple_1.html">Standard Edition Apple II</a></li>
+                      <li id="u13-c64-1"><a href="pages/u13_c64_1.html">Standard Edition C64</a></li>
+                      <li id="u13-c64-2"><a href="pages/u13_c64_2.html">Second Edition C64</a></li>
+                      <li id="u13-pc-1"><a href="pages/u13_pc_1.html">Standard Edition IBM PC</a></li>
+                      <li id="u13-pc-4"><a href="pages/u13_pc_4.html">Second Edition IBM PC</a></li>
+                      <li id="u13-fmtowns-1"><a href="pages/u13_fmtowns_1.html">FM Towns Edition (JP)</a></li>
+                      <li id="u13-pc-2"><a href="pages/u13_pc_2.html">Microprose PC Edition (EU)</a></li>
+                      <li id="u13-c64-3"><a href="pages/u13_c64_3.html">Microprose C64 Edition (EU)</a></li>
+                      <li id="u13-pc-3"><a href="pages/u13_pc_3.html">Chinese Edition IBM PC</a></li>
+                      <li id="u13-pc-5"><a href="pages/u13_pc_5.html">Korean Edition IBM PC</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-second-trilogy-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-second-trilogy-1">▶</span> Ultima Second Trilogy IV V
+                    VI
+                  </span>
+                  <div class="category-content" id="cat-ultima-second-trilogy-1" style="display: none;">
+                    <ul>
+                      <li id="u46-pc-1"><a href="pages/u46_pc_1.html">Standard Edition 5.25LD PC</a></li>
+                      <li id="u46-pc-2"><a href="pages/u46_pc_2.html">Standard Edition 3.5LD PC</a></li>
+                      <li id="u46-pc-3"><a href="pages/u46_pc_3.html">Special Limited Edition 5.25LD PC</a></li>
+                      <li id="u46-pc-4"><a href="pages/u46_pc_4.html">Special Limited Edition 3.5LD PC</a></li>
+                      <li id="u46-pc-5"><a href="pages/u46_pc_5.html">Standard Edition 3.5LD PC (EU)</a></li>
+                      <li id="u46-pc-7"><a href="pages/u46_pc_7.html">Standard Edition 5.25LD PC (EU)</a></li>
+                      <li id="u46-pc-6"><a href="pages/u46_pc_6.html">EA Edition PC 5.25LD PC (EU)</a></li>
+                      <li id="u46-c64-1"><a href="pages/u46_c64_1.html">Standard Edition C64 (EU)</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-1-6-series-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-1-6-series-1">▶</span> Ultima I-VI Series
+                  </span>
+                  <div class="category-content" id="cat-ultima-1-6-series-1" style="display: none;">
+                    <ul>
+                      <li id="u16-pc-1"><a href="pages/u16_pc_1.html">Software Toolworks Edition</a></li>
+                      <li id="u16-pc-2"><a href="pages/u16_pc_2.html">Standard Edition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-collection-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-collection-1">▶</span> Ultima Collection
+                  </span>
+                  <div class="category-content" id="cat-ultima-collection-1" style="display: none;">
+                    <ul>
+                      <li id="uc-us-1"><a href="pages/uc_us_1.html">Standard Edition (US)</a></li>
+                      <li id="uc-us-4"><a href="pages/uc_us_4.html">Prima Guide Edition (US)</a></li>
+                      <li id="uc-us-2"><a href="pages/uc_us_2.html">EA CDROM Classics</a></li>
+                      <li id="uc-us-3"><a href="pages/uc_us_3.html">Second EA CDROM Classics</a></li>
+                      <li id="uc-eu-1"><a href="pages/uc_eu_1.html">EU Edition (UK)</a></li>
+                      <li id="uc-aus-1"><a href="pages/uc_aus_1.html">Australia Edition (AU)</a></li>
+                      <li id="uc-jp-4"><a href="pages/uc_jp_4.html">First Limited Edition (JP)</a></li>
+                      <li id="uc-jp-1"><a href="pages/uc_jp_1.html">Standard Edition (JP)</a></li>
+                      <li id="uc-jp-2"><a href="pages/uc_jp_2.html">EA Best Selections (JP)</a></li>
+                      <li id="uc-jp-3"><a href="pages/uc_jp_3.html">EA Best Selections (JP) 2nd Ed.</a></li>
+                      <li id="uc-cn-1"><a href="pages/uc_cn_1.html">Chinese Special Edition</a></li>
+                      <li id="uc-kr-1"><a href="pages/uc_kr_1.html">Korean Edition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-vii-complete-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-vii-complete-1">▶</span> The Complete Ultima VII
+                  </span>
+                  <div class="category-content" id="cat-ultima-vii-complete-1" style="display: none;">
+                    <ul>
+                      <li id="u7cpl-us-2"><a href="pages/u7cpl_us_2.html">Standard Edition (US)</a></li>
+                      <li id="u7cpl-eu-1"><a href="pages/u7cpl_eu_1.html">Standard Edition (UK)</a></li>
+                      <li id="u7cpl-eu-2"><a href="pages/u7cpl_eu_2.html">Standard Edition (DE)</a></li>
+                      <li id="u7cpl-us-1"><a href="pages/u7cpl_us_1.html">Serpent Isle Edition (US)</a></li>
+                      <li id="u7cpl-us-3"><a href="pages/u7cpl_us_3.html">EA Classics Edition</a></li>
+                      <li id="u7cpl-us-4"><a href="pages/u7cpl_us_4.html">EA Classics Gold Edition</a></li>
+                      <li id="u7cpl-eu-3"><a href="pages/u7cpl_eu_3.html">EA CDROM Classics (EU,DE)</a></li>
+                      <li id="u7cpl-eu-4"><a href="pages/u7cpl_eu_4.html">EA CDROM Classics (EU,UK)</a></li>
+                      <li id="u7cpl-eu-5"><a href="pages/u7cpl_eu_5.html">EA CDROM Classics (EU,FR)</a></li>
+                      <li id="u7cpl-aus-1"><a href="pages/u7cpl_aus_1.html">Australia Edition</a></li>
+                      <li id="u7cpl-pl-1"><a href="pages/u7cpl_pl_1.html">Polish CD Classics</a></li>
+                      <li id="u7cpl-aus-2"><a href="pages/u7cpl_aus_2.html">Best Sellers Edition (SG)</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-ultima-underworld-series-1')">
+                    <span class="toggle-icon" id="icon-cat-ultima-underworld-series-1">▶</span> Underworld Series
+                  </span>
+                  <div class="category-content" id="cat-ultima-underworld-series-1" style="display: none;">
+                    <ul>
+                      <li id="uws-us-1"><a href="pages/uws_us_1.html">Standard Edition</a></li>
+                      <li id="uws-us-4"><a href="pages/uws_us_4.html">EA Classics Edition</a></li>
+                      <li id="uws-us-3"><a href="pages/uws_us_3.html">EA Classics Gold Edition</a></li>
+                      <li id="uws-us-4"><a href="pages/uws_us_4.html">EA CDROM Classics (US)</a></li>
+                      <li id="uws-eu-1"><a href="pages/uws_eu_1.html">EA CDROM Classics (EU,DE)</a></li>
+                      <li id="uws-eu-2"><a href="pages/uws_eu_2.html">EA CDROM Classics (EU,UK)</a></li>
+                      <li id="uws-eu-3"><a href="pages/uws_eu_3.html">EA CDROM Classics (EU,FR)</a></li>
+                      <li id="uws-aus-1"><a href="pages/uws_aus_1.html">Australia Edition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-miscellaneous-1')">
+                    <span class="toggle-icon" id="icon-cat-miscellaneous-1">▶</span> Miscellaneous
+                  </span>
+                  <div class="category-content" id="cat-miscellaneous-1" style="display: none;">
+                    <ul>
+                      <li id="lbsk-1"><a href="pages/lbsk_1.html">Lord British Starter Kit (US)</a></li>
+                      <li id="uvp-pc-1"><a href="pages/uvp_pc_1.html">Ultima Value Pak PC (US)</a></li>
+                      <li id="uvp-c64-1"><a href="pages/uvp_c64_1.html">Ultima Value Pak C64 (US)</a></li>
+                      <li id="ugen-jp-1"><a href="pages/ugen_jp_1.html">Genesis of Ultima (JP)</a></li>
+                      <li id="u9uo-us-1"><a href="pages/u9uo_us_1.html">Best of Both Worlds (US)</a></li>
+                      <li id="u9uo-de-1"><a href="pages/u9uo_de_1.html">Ultima World Edition (DE)</a></li>
+                      <li id="ucpl-jp-1"><a href="pages/ucpl_jp_1.html">Ultima Complete (JP)</a></li>
+                      <li id="uo-7th-us-1"><a href="pages/uo_7th_us_1.html">7th Anniversary Edition (US)</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Others -->
+          <li>
+            <span class="category-toggle level-0" onclick="toggleCategory('cat-others-0')">
+              <span class="toggle-icon" id="icon-cat-others-0">▶</span> Others
+            </span>
+            <div class="category-content" id="cat-others-0" style="display: none;">
+              <ul>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-akalabeth-1')">
+                    <span class="toggle-icon" id="icon-cat-akalabeth-1">▶</span> Akalabeth
+                  </span>
+                  <div class="category-content" id="cat-akalabeth-1" style="display: none;">
+                    <ul>
+                      <li id="ak-1"><a href="pages/ak_1.html">Computerland Version</a></li>
+                      <li id="ak-2"><a href="pages/ak_2.html">California Pacific Edition</a></li>
+                      <li id="ak-3"><a href="pages/ak_3.html">2nd California Pacific Edition</a></li>
+                      <li id="ak-4"><a href="pages/ak_4.html">Progame Edition</a></li>
+                    </ul>
+                  </div>
+                </li>
+                <li>
+                  <span class="category-toggle level-1" onclick="toggleCategory('cat-escape-from-mt-drash-1')">
+                    <span class="toggle-icon" id="icon-cat-escape-from-mt-drash-1">▶</span> Escape from Mt. Drash
+                  </span>
+                  <div class="category-content" id="cat-escape-from-mt-drash-1" style="display: none;">
+                    <ul>
+                      <li id="mtdrash-1"><a href="pages/mtdrash_1.html">Vic-20 Version</a></li>
+                    </ul>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <!-- Map Index -->
+          <li>
+            <a href="maps.html" class="category-toggle level-0" onclick="handleMapIndexClick(event)"
+              style="cursor: pointer; text-decoration: none; color: #2c3e50 !important; font-size: 1.3em; font-weight: bold; display: block; padding: 8px 0;">
+              <span class="toggle-icon" id="icon-map-index">🗺️</span> Map Index
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <p><strong>Original copyright: </strong>Original Content © 2000-2011 Holger Bachert / Tel</p>
+        <p>
+          <a href="https://github.com/rudokemper/ultima-collectors-revitalized" target="_blank" class="github-link">
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="currentColor">
+              <path
+                d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z" />
+            </svg>
+            View on GitHub
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <!-- Main Content Area (Desktop) -->
+    <div class="main-content desktop-only">
+      <iframe id="content-frame" class="content-frame" src="intro.html" title="Introduction">
+        <div class="loading-spinner"></div>
+      </iframe>
+    </div>
+  </div>
 </body>
+
 </html>
