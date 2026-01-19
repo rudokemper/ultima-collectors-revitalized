@@ -5162,6 +5162,15 @@
         const filterValue = document.getElementById("mapTypeFilter").value;
         const mapCards = document.querySelectorAll(".map-card");
 
+        // Update URL with filter parameter
+        const url = new URL(window.location);
+        if (filterValue === "all") {
+          url.searchParams.delete("filter");
+        } else {
+          url.searchParams.set("filter", filterValue);
+        }
+        window.history.pushState({}, "", url);
+
         mapCards.forEach(card => {
           const mapInfo = card.querySelector(".map-info");
           const strongElements = mapInfo.querySelectorAll("strong");
@@ -5190,6 +5199,22 @@
           section.style.display = visibleCards.length > 0 ? "" : "none";
         });
       }
+
+      // Initialize filter from URL on page load
+      document.addEventListener("DOMContentLoaded", function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const filterParam = urlParams.get("filter");
+        
+        if (filterParam) {
+          const filterSelect = document.getElementById("mapTypeFilter");
+          const validOptions = ["paper", "cardboard", "cloth", "puzzle"];
+          
+          if (validOptions.includes(filterParam.toLowerCase())) {
+            filterSelect.value = filterParam.toLowerCase();
+            filterMapsByType();
+          }
+        }
+      });
     </script>
   </body>
 </html>
