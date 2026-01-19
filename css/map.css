@@ -5,6 +5,41 @@
     margin: 2rem 0;
 }
 
+.filter-container {
+    margin-top: 1.5rem;
+    padding: 1rem;
+    background: #f0f0f0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+.filter-container label {
+    font-weight: 600;
+    margin-right: 0.5rem;
+    color: #4A5568;
+}
+
+.filter-container select {
+    padding: 0.5rem 1rem;
+    border: 1px solid #CBD5E0;
+    border-radius: 4px;
+    background: white;
+    font-size: 1rem;
+    cursor: pointer;
+    min-width: 150px;
+}
+
+.filter-container select:hover {
+    border-color: #A0AEC0;
+}
+
+.filter-container select:focus {
+    outline: none;
+    border-color: #8B4513;
+    box-shadow: 0 0 0 3px rgba(139, 69, 19, 0.1);
+}
+
+
 .map-card {
     border: 1px solid #ddd;
     border-radius: 8px;

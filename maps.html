@@ -37,6 +37,16 @@
             "Show All Releases" to see the complete release history for each
             map.
           </p>
+          <div class="filter-container">
+            <label for="mapTypeFilter">Filter by Map Type:</label>
+            <select id="mapTypeFilter" onchange="filterMapsByType()">
+              <option value="all">All Types</option>
+              <option value="paper">Paper</option>
+              <option value="cardboard">Cardboard</option>
+              <option value="cloth">Cloth</option>
+              <option value="puzzle">Puzzle</option>
+            </select>
+          </div>
         </div>
         <!-- Ultima Main Series -->
         <div class="game-section">
@@ -5147,6 +5157,39 @@
           closeLightbox();
         }
       });
+
+      function filterMapsByType() {
+        const filterValue = document.getElementById("mapTypeFilter").value;
+        const mapCards = document.querySelectorAll(".map-card");
+
+        mapCards.forEach(card => {
+          const mapInfo = card.querySelector(".map-info");
+          const strongElements = mapInfo.querySelectorAll("strong");
+          let mapTypeText = "";
+          
+          // Find the strong element that contains "Map Type:"
+          for (let strong of strongElements) {
+            if (strong.textContent.includes("Map Type:")) {
+              mapTypeText = strong.textContent.replace("Map Type:", "").trim();
+              break;
+            }
+          }
+
+          if (filterValue === "all") {
+            card.style.display = "";
+          } else {
+            const shouldShow = mapTypeText.toLowerCase().includes(filterValue.toLowerCase());
+            card.style.display = shouldShow ? "" : "none";
+          }
+        });
+
+        // Hide empty game sections
+        const gameSections = document.querySelectorAll(".game-section");
+        gameSections.forEach(section => {
+          const visibleCards = section.querySelectorAll(".map-card:not([style*='display: none'])");
+          section.style.display = visibleCards.length > 0 ? "" : "none";
+        });
+      }
     </script>
   </body>
 </html>
