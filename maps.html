@@ -5171,11 +5171,11 @@
         }
         window.history.pushState({}, "", url);
 
-        mapCards.forEach(card => {
+        mapCards.forEach((card) => {
           const mapInfo = card.querySelector(".map-info");
           const strongElements = mapInfo.querySelectorAll("strong");
           let mapTypeText = "";
-          
+
           // Find the strong element that contains "Map Type:"
           for (let strong of strongElements) {
             if (strong.textContent.includes("Map Type:")) {
@@ -5187,28 +5187,32 @@
           if (filterValue === "all") {
             card.style.display = "";
           } else {
-            const shouldShow = mapTypeText.toLowerCase().includes(filterValue.toLowerCase());
+            const shouldShow = mapTypeText
+              .toLowerCase()
+              .includes(filterValue.toLowerCase());
             card.style.display = shouldShow ? "" : "none";
           }
         });
 
         // Hide empty game sections
         const gameSections = document.querySelectorAll(".game-section");
-        gameSections.forEach(section => {
-          const visibleCards = section.querySelectorAll(".map-card:not([style*='display: none'])");
+        gameSections.forEach((section) => {
+          const visibleCards = section.querySelectorAll(
+            ".map-card:not([style*='display: none'])",
+          );
           section.style.display = visibleCards.length > 0 ? "" : "none";
         });
       }
 
       // Initialize filter from URL on page load
-      document.addEventListener("DOMContentLoaded", function() {
+      document.addEventListener("DOMContentLoaded", function () {
         const urlParams = new URLSearchParams(window.location.search);
         const filterParam = urlParams.get("filter");
-        
+
         if (filterParam) {
           const filterSelect = document.getElementById("mapTypeFilter");
           const validOptions = ["paper", "cardboard", "cloth", "puzzle"];
-          
+
           if (validOptions.includes(filterParam.toLowerCase())) {
             filterSelect.value = filterParam.toLowerCase();
             filterMapsByType();
